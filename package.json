@@ -1,5 +1,5 @@
 {
-  "name": "claire-website",
+  "name": "perfect-next-theme",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,14 @@
   },
   "dependencies": {
     "next": "10.0.7",
+    "next-themes": "^0.0.11",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "swr": "^0.4.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
   }
 }
