@@ -1,0 +1,29 @@
+
+name: Lint and Format
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Clone repo
+      - uses: actions/setup-node@v1
+        name: Set up Node
+      - run: npm ci
+        name: Install dependencies
+      - run: npm run lint:fix
+        name: Run Linter
+      - name: Get changed files
+        id: changes
+        # Set outputs using the command.
+        run: |
+          echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
+          echo "::set-output name=ts::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .ts$ | xargs)"
+      - if: ${{ steps.changes.outputs.ts }}
+        name: Commit changes
+        run: |
+          git add .
+          git commit -m "style: lint and format"
+          git push
