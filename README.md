@@ -1,5 +1,6 @@
-# Perfect
-The best Next.js boilerplate ever.
+# [Open Source Intiative](https://open.fiveable.me)
+This is cool. Let's make.
+
 # What does this have?
 - Tailwind CSS (no more going through the installation guide!) - for styling components easily
 - `next-themes` (@pacocoursey) - for going to the dark side
@@ -8,4 +9,4 @@ The best Next.js boilerplate ever.
 - `framer-motion` - for making interactive components and eye-catching animations
 - `react-icons` - for including your favorite icon packs without increasing bundle size significantly. Tree shaking included.
 
-&copy; 2021 Sarthak Mohanty. Licensed under the [Unlicense](LICENSE) from Mozilla.
+Licensed under [MIT](LICENSE).
