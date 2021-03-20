@@ -26,7 +26,11 @@ module.exports = {
                 specialLink: ["hrefLeft", "hrefRight"],
                 aspects: ["invalidHref", "preferButton"]
             }
-        ]
+        ],
+        "jsx-a11y/alt-text": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "react/no-unescaped-entities": "warn"
     },
+
     plugins: ["simple-import-sort"]
 }

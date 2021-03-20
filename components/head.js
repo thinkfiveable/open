@@ -1,12 +1,13 @@
-import Head from 'next/head'
+import Head from "next/head"
 
-export default function HeadObject({children}) {
-    const title = "The Perfect Next.js Theme";
-    const description = "This is the perfect Next.js theme that you should use instead of create-next-app.";
-    const keywords = "put some fun keywords here";
-    const author = "Sarthak Mohanty";
-    const twitter = "@sarthaktexas";
-    //const image = "/ogimage.png"; // This is your OpenGraph image
+export default function HeadObject({ children }) {
+    const title = "The Perfect Next.js Theme"
+    const description =
+        "This is the perfect Next.js theme that you should use instead of create-next-app."
+    const keywords = "put some fun keywords here"
+    const author = "Sarthak Mohanty"
+    const twitter = "@sarthaktexas"
+    // const image = "/ogimage.png"; // This is your OpenGraph image
     return (
         <Head>
             <meta charSet="utf-8" />
@@ -16,7 +17,8 @@ export default function HeadObject({children}) {
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
             <meta name="author" content={author} />
-            <meta property="og:url" content="put it in this quotes" /> {/* This is where you put the domain */}
+            <meta property="og:url" content="put it in this quotes" />{" "}
+            {/* This is where you put the domain */}
             <meta property="og:type" content="website" />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
