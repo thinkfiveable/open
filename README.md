@@ -5,8 +5,8 @@ We're building a community for discovery and learning.
 
 **Prerequisites**: Node.js ( [Install Here](https://nodejs.org/en/download/) ), Git ( [Install Here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) )
 
-1. Clone the repository using the following command in your terminal: `git clone https://github.com/ThinkFiveable/open`
-2. Go into that project's directory using `cd /path/to/folder`
+1. Clone the repository using the following command in your terminal: `git clone https://github.com/ThinkFiveable/open fiveable-open`
+2. Go into that project's directory using `cd fiveable-open`
 3. Do `npm install` to install required dependencies
 4. Then, `npm run dev` which will run the site locally at [http://localhost:3000](http://localhost:3000)
 
