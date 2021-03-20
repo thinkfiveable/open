@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useEffect } from 'react'
 import { CgDarkMode } from 'react-icons/cg'
 import {useTheme} from 'next-themes'
 
@@ -10,10 +9,7 @@ const links = [
 ]
 
 export default function Nav() {
-    const {theme, setTheme} = useTheme()
-    useEffect(() => {
-        console.log('Made by Sarthak Mohanty. All Rights Reserved. Want to hire me? https://srtk.me')
-    })
+    const { theme, setTheme } = useTheme();
     return (
         <nav className="dark:text-white">
             <ul className="flex flex-wrap sm:justify-between items-start sm:items-center p-8 mt-6 sm:mt-0">
