@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
 export default function HeadObject({children}) {
-    const title = "The Perfect Next.js Theme";
-    const description = "This is the perfect Next.js theme that you should use instead of create-next-app.";
+    const title = "Open Source Initiative | Fiveable ";
+    const description = "Put your projects on the Fiveable Open Souce Initiative today and release them to the world!";
     const keywords = "put some fun keywords here";
     const author = "Sarthak Mohanty";
     const twitter = "@sarthaktexas";
@@ -24,7 +24,7 @@ export default function HeadObject({children}) {
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content={twitter} />
             <meta name="twitter:creator" content={twitter} />
-            {/* Add analytics here */}
+
             {children}
         </Head>
     )
