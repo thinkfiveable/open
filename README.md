@@ -24,6 +24,7 @@ Great question! You are expected to fork this repository and to create PRs when 
 - `fix(index): broken button`  
 - `chore: add NEWFILE.md`  
 - `feat: new button!!!`   
+Before making a PR, make sure to run `npm run lint:fix` and fix any warnings or errors that might be shown in your terminal to ensure consistent code style.
 
 You can find more information regarding contributing to this project in our [CONTRIBUTING.md](https://github.com/ThinkFiveable/open/blob/main/CONTRIBUTING.md)
 
