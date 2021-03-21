@@ -3,9 +3,9 @@ import Head from 'next/head'
 export default function HeadObject({children}) {
     const title = "Open Source Initiative | Fiveable ";
     const description = "Put your projects on the Fiveable Open Souce Initiative today and release them to the world!";
-    const keywords = "put some fun keywords here";
-    const author = "Sarthak Mohanty";
-    const twitter = "@sarthaktexas";
+    const keywords = "Fiveable, Open Source, Fiveable Open Source, projects";
+    const author = "Fiveable";
+    const twitter = "@thinkfiveable";
     //const image = "/ogimage.png"; // This is your OpenGraph image
     return (
         <Head>
@@ -24,7 +24,6 @@ export default function HeadObject({children}) {
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content={twitter} />
             <meta name="twitter:creator" content={twitter} />
-
             {children}
         </Head>
     )
