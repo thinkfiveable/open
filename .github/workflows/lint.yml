@@ -15,19 +15,5 @@ jobs:
         name: Set up Node
       - run: npm ci
         name: Install dependencies
-      - run: npm run lint:fix
+      - run: npm run lint
         name: Run Linter
-      - name: Get changed files
-        id: changes
-        # Set outputs using the command.
-        run: |
-          echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
-          echo "::set-output name=ts::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .ts$ | xargs)"
-      - if: ${{ steps.changes.outputs.all }}
-        name: Commit changes
-        run: |
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git add .
-          git commit -m "style: lint and format"
-          git push
