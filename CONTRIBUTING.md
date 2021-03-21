@@ -17,7 +17,12 @@ Let's propose a scenario, say you and another person make two separate PRs. The 
 - Ensure that if you are making a PR to solve an open issue, that no one has already claimed it and been assigned to it.
 
 ## Commiting
-Our commit convention is based directly from the [Angular Commit Convention](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).  
+Our commit convention is based directly from the [Angular Commit Convention](https://www.conventionalcommits.org/en/v1.0.0-beta.4/). Some examples of that being:  
+- `fix: broken button on index.html`  
+- `fix(index): broken button`  
+- `chore: add NEWFILE.md`  
+- `feat: new button!!!`    
+  
 We use husky and commitlint to enforce this on the developer side, so please do not try to circumvent it.  
 If your commit has an unclear message or does not follow our commit convention, you are subject to being asked to edit it using `git rebase`.
 
