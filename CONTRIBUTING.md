@@ -26,4 +26,4 @@ Our commit convention is based directly from the [Angular Commit Convention](htt
 We use husky and commitlint to enforce this on the developer side, so please do not try to circumvent it.  
 If your commit has an unclear message or does not follow our commit convention, you are subject to being asked to edit it using `git rebase`.
 
-
+Once you are ready to create a PR, make sure that you have run `npm run lint:fix` in your terminal to lint and format your code changes. If any warnings or errors are shown, make sure to fix them and commit again before creating the PR.

@@ -1,12 +1,13 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-export default function HeadObject({children}) {
+export default function HeadObject({ children }) {
     const title = "Open Source Initiative | Fiveable ";
-    const description = "Put your projects on the Fiveable Open Souce Initiative today and release them to the world!";
+    const description =
+        "Put your projects on the Fiveable Open Souce Initiative today and release them to the world!";
     const keywords = "Fiveable, Open Source, Fiveable Open Source, projects";
     const author = "Fiveable";
     const twitter = "@thinkfiveable";
-    //const image = "/ogimage.png"; // This is your OpenGraph image
+    // const image = "/ogimage.png"; // This is your OpenGraph image
     return (
         <Head>
             <meta charSet="utf-8" />
@@ -16,7 +17,7 @@ export default function HeadObject({children}) {
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
             <meta name="author" content={author} />
-            <meta property="og:url" content="put it in this quotes" /> {/* This is where you put the domain */}
+            <meta property="og:url" content="put the domain in quotes here" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
@@ -26,5 +27,5 @@ export default function HeadObject({children}) {
             <meta name="twitter:creator" content={twitter} />
             {children}
         </Head>
-    )
+    );
 }
