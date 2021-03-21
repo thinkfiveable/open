@@ -1,15 +1,15 @@
-import Link from "next/link"
-import { useTheme } from "next-themes"
-import { CgDarkMode } from "react-icons/cg"
+import Link from "next/link";
+import { useTheme } from "next-themes";
+import { CgDarkMode } from "react-icons/cg";
 
 const links = [
     { label: "Page 1", href: "/" },
     { label: "Page 2", href: "/" },
     { label: "Page 3", href: "/" }
-]
+];
 
 export default function Nav() {
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme();
     return (
         <nav className="dark:text-white">
             <ul className="flex flex-wrap sm:justify-between items-start sm:items-center p-8 mt-6 sm:mt-0">
@@ -28,10 +28,8 @@ export default function Nav() {
                         <button
                             type="button"
                             onClick={() => {
-                                setTheme(theme === "dark" ? "light" : "dark")
-                                document
-                                    .querySelector("#theme_toggle")
-                                    .classList.toggle("rotate-180")
+                                setTheme(theme === "dark" ? "light" : "dark");
+                                document.querySelector("#theme_toggle").classList.toggle("rotate-180");
                             }}
                             className="p-2 rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 transform duration-200"
                             id="theme_toggle">
@@ -41,5 +39,5 @@ export default function Nav() {
                 </ul>
             </ul>
         </nav>
-    )
+    );
 }
