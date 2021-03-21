@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v2
         name: Clone repo
       - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
         name: Set up Node
       - run: npm ci
         name: Install dependencies
@@ -21,7 +23,7 @@ jobs:
         run: |
           echo "::set-output name=all::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
           echo "::set-output name=ts::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .ts$ | xargs)"
-      - if: ${{ steps.changes.outputs.ts }}
+      - if: ${{ steps.changes.outputs.all }}
         name: Commit changes
         run: |
           git add .
