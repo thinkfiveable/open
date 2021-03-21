@@ -26,6 +26,8 @@ jobs:
       - if: ${{ steps.changes.outputs.all }}
         name: Commit changes
         run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
           git add .
           git commit -m "style: lint and format"
           git push
