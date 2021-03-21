@@ -1,4 +1,4 @@
-import HeadObject from "../components/head"
+import HeadObject    from "../components/head"
 
 export default function Home() {
     return (
@@ -7,12 +7,12 @@ export default function Home() {
             <main>
                 <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 py-12">
                     <div className="flex flex-row space-x-5">
-                        <h1 className="font-rubik font-bold text-5xl md:text-6xl">
+                                        <h1 className="font-rubik font-bold text-5xl md:text-6xl">
                             Fiveable
                         </h1>
                         <div className="font-mono font-medium text-xl md:text-2xl leading-tight">
                             Open
-                            <br />
+                                                    <br />
                             Source
                         </div>
                     </div>
@@ -24,7 +24,7 @@ export default function Home() {
                     </div>
                 </section>
                 <svg
-                    className="transform rotate-180 -mt-1 md:-mt-5"
+                        className="transform rotate-180 -mt-1 md:-mt-5"
                     viewBox="0 0 1440 320">
                     <path
                         fill="#c1e8ed"
