@@ -1,9 +1,7 @@
-export default function Card({ name, title, projectType, thumbnail, profileIcon, featureColor }) {
+export default function Card({ name, title, projectType, thumbnail, profileIcon, award }) {
     return (
         <div className="py-4">
-            <div
-                style={{ borderColor: `${featureColor}` }}
-                className="rounded-xl h-40 w-72 overflow-hidden border-4">
+            <div style={{ borderColor: award }} className="rounded-xl h-40 w-72 overflow-hidden border-4">
                 <img src={thumbnail} alt="featured project" />
             </div>
             <div className="flex flex-row pt-4 justify-between max-w-6xl">
