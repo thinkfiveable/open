@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import HeadObject from "../components/head";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
                     />
                 </svg>
             </main>
+            <Footer />
         </div>
     );
 }
