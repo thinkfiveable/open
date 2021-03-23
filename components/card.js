@@ -3,10 +3,10 @@ export default function Card({ name, title, projectType, thumbnail, profileIcon,
         <div className="py-4">
             <div
                 style={{ borderColor: award }}
-                className="rounded-xl h-52 w-96 overflow-hidden border-4 lg:w-80">
+                className="rounded-xl h-52 w-80 sm:w-3/4 md:w-80 overflow-hidden border-4 mx-auto">
                 <img src={thumbnail} alt="featured project" />
             </div>
-            <div className="flex flex-row pt-4 justify-between max-w-6xl">
+            <div className="flex flex-row pt-4 justify-around">
                 <div className="flex flex-col">
                     <h2 className="font-rubik font-medium text-xl">{title}</h2>
                     <div className="flex flex-row">
@@ -15,7 +15,7 @@ export default function Card({ name, title, projectType, thumbnail, profileIcon,
                         </p>
                     </div>
                 </div>
-                <img src={profileIcon} className="rounded-full h-12 w-12" alt="Profile" />
+                <img src={profileIcon} className="rounded-full h-12 w-12 float-right" alt="Profile" />
             </div>
         </div>
     );

@@ -42,7 +42,7 @@ export default function Home() {
                         d="M0 64h24c24 0 72 0 120 5.3 48 5.7 96 15.7 144 37.4 48 21.3 96 53.3 144 80 48 26.3 96 48.3 144 64C624 267 672 277 720 272s96-27 144-42.7c48-16.3 96-26.3 144-32 48-5.3 96-5.3 144 16 48 21.7 96 63.7 144 69.4 48 5.3 96-26.7 120-42.7l24-16v96H0z"
                     />
                 </svg>
-                <div className="justify-center grid sm:grid-flow-row lg:grid-flow-col gap-12">
+                <div className="mx-8 justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <Card
                         name="Student Name"
                         title="Lorem Ipsum Dddddddd"
