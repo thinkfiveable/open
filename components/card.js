@@ -1,16 +1,20 @@
-export default function Card( props ) {
+export default function Card({ name, title, projectType, thumbnail, profileIcon, award }) {
     return (
-        <div>
-            <img src="https://og-cards.vercel.app/Lorem%20Ipsum.png?theme=light&md=1&fontSize=225px&caption=A%2520website." className="rounded-xl h-40 w-52" />
-            <div className="flex flex-row">
-                <div className="flex flex-col ">
-                    <h2 className="font-rubik">Lorem ipsum</h2>
+        <div className="py-4">
+            <div style={{ borderColor: award }} className="rounded-xl h-40 w-72 overflow-hidden border-4">
+                <img src={thumbnail} alt="featured project" />
+            </div>
+            <div className="flex flex-row pt-4 justify-between max-w-6xl">
+                <div className="flex flex-col">
+                    <h2 className="font-rubik font-medium text-xl">{title}</h2>
                     <div className="flex flex-row">
-                        <p>Sarthak Mohanty • Website</p>
+                        <p className="font-mono">
+                            {name} • {projectType}
+                        </p>
                     </div>
                 </div>
-                <img src="https://sarthakmohanty.me/sarthak.jpg" className="rounded-full h-12 w-12 float-right" />
+                <img src={profileIcon} className="rounded-full h-12 w-12" alt="Profile" />
             </div>
         </div>
-    )
+    );
 }
