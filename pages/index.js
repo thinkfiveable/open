@@ -1,3 +1,6 @@
+import { BsArrowRightShort } from "react-icons/bs";
+import { FiGithub } from "react-icons/fi";
+
 import Card from "../components/card";
 import HeadObject from "../components/head";
 
@@ -7,19 +10,30 @@ export default function Home() {
             <HeadObject />
             <main>
                 <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 py-12">
-                    <div className="flex flex-row space-x-5">
-                        <h1 className="font-rubik font-bold text-5xl md:text-6xl">Fiveable</h1>
-                        <div className="font-mono font-medium text-xl md:text-2xl leading-tight">
-                            Open
-                            <br />
-                            Source
+                    <div className="mt-10 sm:mt-0">
+                        <div className="flex flex-col md:flex-row md:space-x-5">
+                            <h1 className="font-rubik font-bold text-5xl sm:text-6xl">Fiveable</h1>
+                            <div className="font-mono font-medium text-2xl leading-none md:self-center">
+                                Open <div className="inline md:block">Source</div>
+                            </div>
                         </div>
+                        <a
+                            className="md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
+                            href="https://github.com/thinkfiveable/open">
+                            <FiGithub size={30} />
+                        </a>
+                        <a
+                            className="hidden sm:block hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
+                            href="https://github.com/thinkfiveable/open">
+                            <FiGithub size={40} />
+                        </a>
                     </div>
                     <h2 className="font-rubik font-medium text-3xl md:w-2/3 lg:w-2/5">
                         We&#39;re building a community for discovery and learning.
                     </h2>
-                    <div className="font-rubik font-medium bg-black text-center rounded-full px-3 py-1 text-lg text-white w-48">
-                        Learn more. -&gt;
+                    <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row">
+                        <div>Learn more.</div>
+                        <BsArrowRightShort size={30} />
                     </div>
                 </section>
                 <svg className="transform rotate-180 -mt-1 md:-mt-5" viewBox="0 0 1440 320">
