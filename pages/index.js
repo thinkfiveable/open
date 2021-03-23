@@ -1,3 +1,4 @@
+import Card from "../components/card";
 import HeadObject from "../components/head";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
                         </div>
                     </div>
                     <h2 className="font-rubik font-medium text-3xl md:w-2/3 lg:w-2/5">
-                        We're building a community for discovery and learning.
+                        We&#39;re building a community for discovery and learning.
                     </h2>
                     <div className="font-rubik font-medium bg-black text-center rounded-full px-3 py-1 text-lg text-white w-48">
                         Learn more. -&gt;
@@ -27,6 +28,31 @@ export default function Home() {
                         d="M0 64h24c24 0 72 0 120 5.3 48 5.7 96 15.7 144 37.4 48 21.3 96 53.3 144 80 48 26.3 96 48.3 144 64C624 267 672 277 720 272s96-27 144-42.7c48-16.3 96-26.3 144-32 48-5.3 96-5.3 144 16 48 21.7 96 63.7 144 69.4 48 5.3 96-26.7 120-42.7l24-16v96H0z"
                     />
                 </svg>
+                <div className="justify-center grid sm:grid-flow-row md:grid-flow-col gap-6">
+                    <Card
+                        name="Student Name"
+                        title="Lorem Ipsum Dddddddd"
+                        projectType="Website"
+                        thumbnail="https://source.unsplash.com/random"
+                        profileIcon="https://picsum.photos/200"
+                        award="gold"
+                    />
+                    <Card
+                        name="Student Name"
+                        title="Lorem Ipsum"
+                        projectType="Discord Bot"
+                        thumbnail="https://source.unsplash.com/random"
+                        profileIcon="https://picsum.photos/200"
+                        award="silver"
+                    />
+                    <Card
+                        name="Student Name"
+                        title="Lorem Ipsum"
+                        projectType="Website"
+                        thumbnail="https://source.unsplash.com/random"
+                        profileIcon="https://picsum.photos/200"
+                    />
+                </div>
             </main>
         </div>
     );
