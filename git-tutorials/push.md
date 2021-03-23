@@ -1,5 +1,5 @@
 # Pushing
-This last step is relativelly simple: now that we've commited our changes, all we have to do is push our work!
+This last step is relatively simple: now that we've commited our changes, all we have to do is push our work!
 
 ## Terminal Syntax
 To push our changes, all we have to do is enter the following:  

@@ -8,7 +8,7 @@ We need to get the HTTPS address on the repository page, which is linked under t
 We will now use our terminal's shell commands to move to the place where we want to put our directory copy. For example, if we wanted to change to our Documents directory, we would do the following:  
 `cd Documents`  
 To clone our repository, we use the following command in our terminal:  
-`$ git clone [HTTPS ADDRESS]`  
+`git clone [HTTPS ADDRESS]`  
 For example:  
 `git clone https://github.com/ThinkFiveable/open fiveable-open`  
 Again, this will create a local copy of the repository at the directory specified earlier.  
