@@ -4,18 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.content {
-    display: flex;
-    flex-direction: row;
-    background-color: #171717;
-    color: white;
-    gap: 5vw;
-    height: 8vw;
-    align-items: center;
-    justify-content: center;
-}
-
-#footer-svg {
-    width: 100%;
-}
