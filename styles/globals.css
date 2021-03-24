@@ -4,3 +4,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-font {
+    @apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs;
+}
+
+.footer-gap {
+    @apply 2xl:gap-20 xl:gap-10 lg:gap-10 md:gap-5 gap-2;
+}
+
+.footer-div {
+    @apply md:h-20 sm:h-60 h-40 bg-black;
+}
+
+.footer-text {
+    @apply text-white font-medium;
+}
+
+.footer-flex {
+    @apply flex flex-col md:flex-row justify-center items-center justify-items-center;
+}
