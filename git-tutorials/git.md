@@ -1,4 +1,3 @@
-Table of Contents
 - [Getting Started with Git/GitHub](#getting-started-with-git-github)
     + [Clone](#clone)
     + [Pull](#pull)
@@ -41,8 +40,6 @@ To push our changes, all we have to do is enter the following into the terminal 
 
 ### Pull Request
 To submit your new changes to the original project, you will need to create a pull request. Head back to your fork on GitHub, and you should be presented with a green button that says `Compare & pull request`. 
-
-(image)
 
 If you click that button, you will be asked to give your pull reqest a name and description. Please write a description that accurately reflects what you were trying to do. When you hit the `Create pull request` button on the screen, a maintainer of the project will be notified to review the suggested changes. 
 
