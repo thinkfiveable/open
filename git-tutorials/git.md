@@ -78,7 +78,7 @@ or (the more preferred method as the above button won't always be avaliable), yo
 - Add our repository as a remote URL (`git remote add upstream https://github.com/ThinkFiveable/open.git`)
 - Make sure you are on the branch you want to merge master into (`git checkout PR_BRANCH_NAME`)
 - Make sure you have the latest upstream changes (`git fetch upstream`)
-- Merge the upstream master branch into your PR branch (`git merge upstream/master`). At this stage you might run into what are called **MERGE CONFLICTS. You must resolve these before pushing to your fork.** See: [Merge Conflicts](#merge-conflicts)
+- Merge the upstream master branch into your PR branch (`git merge upstream/main`). At this stage you might run into what are called **MERGE CONFLICTS. You must resolve these before pushing to your fork.** See: [Merge Conflicts](#merge-conflicts)
 - Push your changes to your fork (`git push`)
 
 ### [Merge Conflicts](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github)
