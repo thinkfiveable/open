@@ -12,9 +12,9 @@
 To use Git, you'll need to download it [here](https://git-scm.com/downloads).
 
 Be sure to set your username and email before making contributions.
-In your terminal, do the following:
-* `git config --global user.name "Your Name"`
-* `git config --global user.email "youremail@yourdomain.com"`
+In your terminal, do the following:  
+* `git config --global user.name "Your Name"`  
+* `git config --global user.email "youremail@yourdomain.com"`  
 
 ### Fork
 First, we will need our own copy of the repository to make changes on. You will need to create a fork by clicking on the `Fork` button in the top right.
@@ -69,6 +69,17 @@ To submit your new changes to the original project, you will need to create a pu
 If you click that button, you will be asked to give your pull reqest a name and description. Please write a description that accurately reflects what you were trying to do. When you hit the `Create pull request` button on the screen, a maintainer of the project will be notified to review the suggested changes. 
 
 <img align="center" src="https://cloud-g86tob3jb-hack-club-bot.vercel.app/1screen_shot_2021-03-26_at_9.26.14_pm.png" alt="compare and pull request" width=500/>
+
+As your PR waits to be merged, other peoples' PRs might be merged before yours, meaning you have to "update your branch" with the master branch. You can do it with either this button 
+
+<img align="center" src="https://cdn.discordapp.com/attachments/768856355255484469/825476408767545392/chrome_2e0DN4u2iQ.png" alt="Update branch button"/>
+
+or (the more preferred method as the above button won't always be avaliable), you can do these steps:
+- Add our repository as a remote URL (`git remote add upstream https://github.com/ThinkFiveable/open.git`)
+- Make sure you are on the branch you want to merge master into (`git checkout PR_BRANCH_NAME`)
+- Make sure you have the latest upstream changes (`git fetch upstream`)
+- Merge the upstream master branch into your PR branch (`git merge upstream/master`). At this stage you might run into what are called **MERGE CONFLICTS. You must resolve these before pushing to your fork.** See: [Merge Conflicts](#merge-conflicts)
+- Push your changes to your fork (`git push`)
 
 ### [Merge Conflicts](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github)
 Sometimes you might encounter a message saying that there are "merge conflicts" that must be resolved before merging. This happens when multiple people make different changes to the same line of the same file in the repository. This tutorial will go over resolving merge conflicts using GitHub's web interface.
