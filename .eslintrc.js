@@ -9,10 +9,7 @@ module.exports = {
         project: "./tsconfig.eslint.json"
     },
     rules: {
-        "react/jsx-filename-extension": [
-            1,
-            { extensions: [".js", ".jsx", ".ts", ".tsx"] }
-        ],
+        "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx", ".ts", ".tsx"] }],
         "prettier/prettier": ["error", {}, { usePrettierrc: true }],
         "react/react-in-jsx-scope": "off",
         "no-console": "off",
@@ -33,4 +30,4 @@ module.exports = {
     },
 
     plugins: ["simple-import-sort"]
-}
+};
