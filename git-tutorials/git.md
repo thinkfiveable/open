@@ -41,9 +41,15 @@ To push our changes, all we have to do is enter the following into the terminal 
 ### Pull Request
 To submit your new changes to the original project, you will need to create a pull request. Head back to your fork on GitHub, and you should be presented with a green button that says `Compare & pull request`. 
 
+<img align="center" src="https://cloud-g86tob3jb-hack-club-bot.vercel.app/0screen_shot_2021-03-26_at_9.26.28_pm.png" alt="compare and pull request" width=500/>
+
 If you click that button, you will be asked to give your pull reqest a name and description. Please write a description that accurately reflects what you were trying to do. When you hit the `Create pull request` button on the screen, a maintainer of the project will be notified to review the suggested changes. 
+
+<img align="center" src="https://cloud-g86tob3jb-hack-club-bot.vercel.app/1screen_shot_2021-03-26_at_9.26.14_pm.png" alt="compare and pull request" width=500/>
 
 ### [Merge Conflicts](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-on-github)
 Sometimes you might encounter a message saying that there are "merge conflicts" that must be resolved before merging. This happens when multiple people make different changes to the same line of the same file in the repository. This tutorial will go over resolving merge conflicts using GitHub's web interface.
 
 Near the bottom of your pull request, click the grey button `Resolve conflicts`. Delete the conflict markers `<<<<<<<`, `=======`, `>>>>>>>`, and make changes appropriately. Once you have resolved all conflicts, click the green button `Commit merge`.
+
+<img src="https://docs.github.com/assets/images/help/pull_requests/view-merge-conflict-with-markers.png" alt="resolve merge conflicts" width=500/>
