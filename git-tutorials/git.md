@@ -26,7 +26,7 @@ For example, if we wanted to change to our Documents directory, we would do the 
 `cd Documents`
 
 To clone our repository, we use the following command in our terminal:
-`git clone <https address here>`
+`git clone <https address here> [cloned-directory-name]`
 
 For example:
 `git clone https://github.com/your-username/open.git fiveable-open`
@@ -47,7 +47,7 @@ If you make a bunch of commits and forget to switch branches, you can use `git s
 ### Pull
 You will need to use `git pull` to fetch the latest changes from another repository or local branch. When you run `git pull` in your terminal, remote content will be downloaded and immediately change the local state of your repository to match the new content. It is strongly recommended to not `git pull` when you have uncommitted changes. 
 
-In the event that you do have uncommitted changes and want to `git pull`, you will need to do the following in your command line. First, `git stash` which "stashes" your changes away temporarily. Then, `git pull` to fetch the latest changes. Next, `git stash apply` to apply the changes back onto your local copy, and then `git stash drop` to remove those changes from the stash stack. This method is not reccommened as unexpected behavior may occur.
+In the event that you do have uncommitted changes and want to `git pull`, you will need to do the following in your command line. First, `git stash` which "stashes" your changes away temporarily. Then, `git pull` to fetch the latest changes. Next, `git stash apply` to apply the changes back onto your local copy, and then `git stash drop` to remove those changes from the stash stack. 
 
 ### Commit
 After making your changes, you will use terminal commands to commit them. Our commit message needs to explain what we've done. This message may be useful if we want to check our change history in the future, and it can also be useful to other contributors.
