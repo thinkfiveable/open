@@ -5,6 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .footer-font {
     @apply 2xl:text-2xl xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs;
 }
@@ -23,4 +24,8 @@
 
 .footer-flex {
     @apply flex flex-col md:flex-row justify-center items-center justify-items-center;
+
+.w-fitcontent {
+    width: fit-content;
+
 }
