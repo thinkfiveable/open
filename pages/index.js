@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div>
             <HeadObject />
-            <main>
+            <main className="h-screen">
                 <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 py-12">
                     <div className="flex flex-row space-x-5">
                         <h1 className="font-rubik font-bold text-5xl md:text-6xl">Fiveable</h1>
