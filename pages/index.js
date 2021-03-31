@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div>
             <HeadObject />
-            <main className="h-screen">
+            <main>
                 <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 py-12">
                     <div className="mt-10 sm:mt-0">
                         <div className="flex flex-col md:flex-row md:space-x-5">
