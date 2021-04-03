@@ -1,10 +1,12 @@
+import { useRouter } from "next/router";
 import { BsArrowRightShort } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 
 import Card from "../components/card";
 import HeadObject from "../components/head";
 
-export default function Home() {
+export default function Home(handleKeyDown) {
+    const router = useRouter();
     return (
         <div>
             <HeadObject />
@@ -32,7 +34,13 @@ export default function Home() {
                         We&#39;re building a community for discovery and learning.
                     </h2>
                     <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row">
-                        <div>Learn more.</div>
+                        <div
+                            onClick={() => router.push("/about")}
+                            role="button"
+                            onKeyDown={handleKeyDown}
+                            tabIndex={0}>
+                            Learn more.
+                        </div>
                         <BsArrowRightShort size={30} />
                     </div>
                 </section>
