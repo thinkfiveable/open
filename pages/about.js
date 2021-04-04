@@ -1,38 +1,34 @@
-import { useRouter } from "next/router";
+import Link from "next/link";
 import { BsArrowLeftShort } from "react-icons/bs";
 
 import HeadObject from "../components/head";
 
-export default function About(handleKeyDown) {
-    const router = useRouter();
-
+export default function About() {
     return (
         <div>
             <HeadObject />
             <main>
-                <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 py-12">
-                    <div
-                        onClick={() => router.push("/")}
-                        role="link"
-                        tabIndex={0}
-                        onKeyDown={handleKeyDown}
-                        className="font-rubik flex flex-row text-center text-lg">
-                        <BsArrowLeftShort size={25} /> Back
-                    </div>
+                <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 pt-12">
+                    <Link href="/">
+                        <div className="font-rubik flex flex-row text-center text-lg cursor-pointer">
+                            <BsArrowLeftShort size={25} /> Back
+                        </div>
+                    </Link>
                     <div>
                         <h1 className="font-rubik font-bold text-6xl">About</h1>
                         <h3 className="font-rubik text-2xl">Fiveable Open Source Initiative</h3>
                     </div>
                 </section>
-                <div className="w-full h-60 object-cover">
-                    <svg viewBox="0 0 900 600" className="transform rotate-180 -mt-1 md:-mt-5">
+                <div className="w-full">
+                    <svg viewBox="0 0 900 200">
                         <path
-                            d="M0 482l9.3-8.7c9.4-8.6 28-26 46.9-17 18.8 9 37.8 44.4 56.6 63.2 18.9 18.8 37.5 21.2 56.2 13 18.7-8.2 37.3-26.8 56-43.3 18.7-16.5 37.3-30.9 56.2-19.7 18.8 11.2 37.8 47.8 56.6 62.3 18.9 14.5 37.5 6.9 56.2-19 18.7-25.8 37.3-69.8 56-71.6 18.7-1.9 37.3 38.5 56.2 61.5 18.8 23 37.8 28.6 56.6 26 18.9-2.7 37.5-13.7 56.2-22.4 18.7-8.6 37.3-15 56-24 18.7-9 37.3-20.6 56.2-15.5C750 472 769 494 787.8 507.2c18.9 13.1 37.5 17.5 56.2 2.6 18.7-14.8 37.3-48.8 46.7-65.8l9.3-17v174H0z"
+                            d="M0 20l10.7 15.3c10.6 15.4 32 46 53.5 45.7 21.5-.3 43.1-31.7 64.6-38.2 21.5-6.5 42.9 11.9 64.2 12.2 21.3.3 42.7-17.3 64-11.5 21.3 5.8 42.7 35.2 64.2 48 21.5 12.8 43.1 9.2 64.6 3.5 21.5-5.7 42.9-13.3 64.2-26 21.3-12.7 42.7-30.3 64.2-33.7 21.5-3.3 43.1 7.7 64.6 16 21.5 8.4 42.9 14 64.2 6.7 21.3-7.3 42.7-27.7 64-31.5 21.3-3.8 42.7 8.8 64.2 15 21.5 6.2 43.1 5.8 64.6.7C857.3 37 878.7 27 889.3 22l10.7-5V0H0z"
                             fill="#c1e8ed"
+                            strokeLinecap="round"
                         />
                     </svg>
                 </div>
-                <section className="px-12 md:px-20 md:py-6 font-rubik">
+                <section className="px-12 md:px-20 md:-mt-28 lg:-mt-50 font-rubik z-50">
                     <div>
                         <p className="text-lg">
                             The Fiveable Open Source Initiative aims to create more community and
@@ -70,7 +66,8 @@ export default function About(handleKeyDown) {
                             </strong>
                             .
                         </p>
-                        <p className="text-lg leading-loose">
+                        <br />
+                        <p className="text-lg">
                             Don&#39;t know where to start? Check out our{" "}
                             <strong>
                                 <a href="https://github.com/ThinkFiveable/open/blob/main/git-tutorials/git.md">

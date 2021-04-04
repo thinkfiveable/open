@@ -1,12 +1,11 @@
-import { useRouter } from "next/router";
+import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 
 import Card from "../components/card";
 import HeadObject from "../components/head";
 
-export default function Home(handleKeyDown) {
-    const router = useRouter();
+export default function Home() {
     return (
         <div>
             <HeadObject />
@@ -33,16 +32,12 @@ export default function Home(handleKeyDown) {
                     <h2 className="font-rubik font-medium text-3xl md:w-2/3 lg:w-2/5">
                         We&#39;re building a community for discovery and learning.
                     </h2>
-                    <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row">
-                        <div
-                            onClick={() => router.push("/about")}
-                            role="button"
-                            onKeyDown={handleKeyDown}
-                            tabIndex={0}>
-                            Learn more.
+                    <Link href="/about">
+                        <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row">
+                            <div>Learn more.</div>
+                            <BsArrowRightShort size={30} />
                         </div>
-                        <BsArrowRightShort size={30} />
-                    </div>
+                    </Link>
                 </section>
                 <svg className="transform rotate-180 -mt-1 md:-mt-5" viewBox="0 0 1440 320">
                     <path
