@@ -15,7 +15,7 @@ const CustomLink = (props) => {
     }
 
     return (
-        <a target="_blank" rel="noopener noreferrer" {...props}>
+        <a target="_blank" className="font-semibold" rel="noopener noreferrer" {...props}>
             {props.children}
         </a>
     );
