@@ -8,25 +8,3 @@
 .w-fitcontent {
     width: fit-content;
 }
-
-@layer base {
-    h1 {
-        @apply text-5xl font-bold font-rubik leading-loose;
-    }
-    h2,
-    h3 {
-        @apply text-3xl font-medium font-rubik leading-loose;
-    }
-    h4 {
-        @apply text-xl leading-loose font-rubik font-semibold;
-    }
-    p {
-        @apply text-lg font-rubik font-light mb-5;
-    }
-    a {
-        @apply font-semibold;
-    }
-    strong {
-        @apply font-semibold;
-    }
-}
