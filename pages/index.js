@@ -33,7 +33,7 @@ export default function Home() {
                         We&#39;re building a community for discovery and learning.
                     </h2>
                     <Link href="/about">
-                        <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row">
+                        <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
                             <div>Learn more.</div>
                             <BsArrowRightShort size={30} />
                         </div>
