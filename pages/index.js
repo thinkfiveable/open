@@ -33,10 +33,10 @@ export default function Home() {
                         We&#39;re building a community for discovery and learning.
                     </h2>
                     <Link href="/about">
-                        <div className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
-                            <a>Learn more.</a>
+                        <a className="font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
+                            <div>Learn more.</div>
                             <BsArrowRightShort size={30} />
-                        </div>
+                        </a>
                     </Link>
                 </section>
                 <svg className="transform rotate-180 -mt-1 md:-mt-5" viewBox="0 0 1440 320">
