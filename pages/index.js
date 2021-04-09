@@ -20,7 +20,7 @@ export default function Home() {
                             </div>
                         </div>
                         <a
-                            className="md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
+                            className="md:animate-pulse md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
                             href="https://github.com/thinkfiveable/open">
                             <FiGithub size={30} />
                         </a>
@@ -34,7 +34,7 @@ export default function Home() {
                         We&#39;re building a community for discovery and learning.
                     </h2>
                     <Link href="/about">
-                        <a className="md:animate-bounce font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
+                        <a className="md:animate-bounce hover:text-gray-300 font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
                             <div>Learn more.</div>
                             <BsArrowRightShort size={30} />
                         </a>
