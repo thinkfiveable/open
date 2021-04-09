@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className="flex-1 flex justify-between items-center pl-4 md:pl-0">
                     <div>&#169; Fiveable 2021 | All Rights Reserved.</div>
                 </div>
-                <ul className="flex flex-col content-start md:flex-row space-y-5 md:space-x-5 md:space-y-0">
+                <ul className="flex flex-col items-center md:flex-row space-y-5 md:space-x-5 md:space-y-0">
                     <li>Docs</li>
                     <li>Contributors</li>
                     <li>
