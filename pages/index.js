@@ -5,6 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import HeadObject from "../components/head";
+import RepoData from "../data/PROJECTS.json";
 
 export default function Home() {
     return (
@@ -47,29 +48,21 @@ export default function Home() {
                     />
                 </svg>
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <Card
-                        name="Student Name"
-                        title="Lorem Ipsum Dddddddd"
-                        projectType="Website"
-                        thumbnail="https://source.unsplash.com/random"
-                        profileIcon="https://picsum.photos/200"
-                        award="gold"
-                    />
-                    <Card
-                        name="Student Name"
-                        title="Lorem Ipsum"
-                        projectType="Discord Bot"
-                        thumbnail="https://source.unsplash.com/random"
-                        profileIcon="https://picsum.photos/200"
-                        award="silver"
-                    />
-                    <Card
-                        name="Student Name"
-                        title="Lorem Ipsum"
-                        projectType="Website"
-                        thumbnail="https://source.unsplash.com/random"
-                        profileIcon="https://picsum.photos/200"
-                    />
+                    {RepoData.map((x) => {
+                        return (
+                            <Card
+                                key={x.repo_name}
+                                name={x.repo_owner}
+                                title={x.repo_name}
+                                projectType={x.project_type}
+                                thumbnail={
+                                    x.repo_logo ?? "https://avatars.githubusercontent.com/u/76849512?v=4"
+                                }
+                                profileIcon={x.repo_owner_icon}
+                                award={x.award ?? "silver"}
+                            />
+                        );
+                    })}
                 </div>
             </main>
             <Footer />
