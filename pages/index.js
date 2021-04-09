@@ -3,6 +3,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 
 import Card from "../components/card";
+import Footer from "../components/footer";
 import HeadObject from "../components/head";
 
 export default function Home() {
@@ -71,6 +72,7 @@ export default function Home() {
                     />
                 </div>
             </main>
+            <Footer />
         </div>
     );
 }
