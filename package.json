@@ -1,15 +1,13 @@
 {
-  "name": "perfect-next-theme",
-  "version": "0.1.0",
+  "name": "fiveable-open",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "format": "prettier './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "format:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -28,6 +26,7 @@
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.21.0",
     "autoprefixer": "^10.2.4",
     "eslint": "^7.22.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
