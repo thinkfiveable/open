@@ -48,23 +48,19 @@ export default function Home() {
                     />
                 </svg>
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {RepoData.map(
-                        ({ repo_name, repo_owner, project_type, repo_logo, repo_owner_icon, award }) => {
-                            return (
-                                <Card
-                                    key={repo_name}
-                                    name={repo_owner}
-                                    title={repo_name}
-                                    projectType={project_type}
-                                    thumbnail={
-                                        repo_logo ?? "https://avatars.githubusercontent.com/u/76849512?v=4"
-                                    }
-                                    profileIcon={repo_owner_icon}
-                                    award={award ?? "silver"}
-                                />
-                            );
-                        }
-                    )}
+                    {RepoData.map(({ repoName, repoOwner, projectType, repoLogo, repoOwnerIcon, award }) => {
+                        return (
+                            <Card
+                                key={repoName}
+                                name={repoOwner}
+                                title={repoName}
+                                projectType={projectType}
+                                thumbnail={repoLogo ?? "https://avatars.githubusercontent.com/u/76849512?v=4"}
+                                profileIcon={repoOwnerIcon}
+                                award={award ?? "silver"}
+                            />
+                        );
+                    })}
                 </div>
             </main>
             <Footer />
