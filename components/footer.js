@@ -16,7 +16,11 @@ export default function Footer() {
                     <li>Docs</li>
                     <li>Contributors</li>
                     <li>
-                        <a className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl" href="https://hi.fiveable.me/contact/">Contact Us</a>
+                        <a
+                            className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl"
+                            href="https://hi.fiveable.me/contact/">
+                            Contact Us
+                        </a>
                     </li>
                     <li>
                         <a href="https://hi.fiveable.me/privacy-policy/">Privacy</a>
