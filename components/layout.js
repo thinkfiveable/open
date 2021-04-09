@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BsArrowLeftShort } from "react-icons/bs";
 
+import Footer from "./footer";
 import HeadObject from "./head";
 
 export default function Layout({ subtitle, title, children }) {
@@ -25,6 +26,7 @@ export default function Layout({ subtitle, title, children }) {
                 />
             </svg>
             <section className="px-12 md:px-20 font-rubik z-40 relative mt-28">{children}</section>
+            <Footer />
         </div>
     );
 }
