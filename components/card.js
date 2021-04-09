@@ -3,7 +3,7 @@ export default function Card({ name, title, projectType, thumbnail, profileIcon,
         <div className="py-4">
             <div
                 style={{ borderColor: award }}
-                className="rounded-xl h-52 w-80 sm:w-3/4 md:w-80 overflow-hidden border-4 mx-auto">
+                className="rounded-xl h-52 w-3/4 overflow-hidden border-4 mx-auto">
                 <img src={thumbnail} alt="featured project" />
             </div>
             <div className="flex flex-row pt-4 justify-around">
