@@ -21,7 +21,7 @@ export default function Home() {
                             </div>
                         </div>
                         <a
-                            className="md:animate-pulse md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
+                            className="md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
                             href="https://github.com/thinkfiveable/open">
                             <FiGithub size={30} />
                         </a>
