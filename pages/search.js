@@ -7,7 +7,7 @@ export default function Search() {
         <div>
             <HeadObject />
             <main>
-                <div className="grid mx-20 justify-start grid-cols-1 gap-12 py-12">
+                <div className="grid mx-5 sm:mx-20 justify-start grid-cols-1 gap-12 py-4 sm:py-12">
                     <SearchBar />
                     <SearchCard
                         name="Student Name"
