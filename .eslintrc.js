@@ -1,4 +1,5 @@
 module.exports = {
+    root: true,
     extends: ["airbnb-typescript", "plugin:prettier/recommended"],
     env: {
         browser: true,
@@ -28,6 +29,5 @@ module.exports = {
         "@typescript-eslint/no-unused-vars": "warn",
         "react/no-unescaped-entities": "warn"
     },
-
     plugins: ["simple-import-sort"]
 };
