@@ -3,8 +3,12 @@ export default function SearchCard({ name, title, projectType, thumbnail, profil
         <div className="flex sm:flex-row flex-col py-4">
             <div
                 style={{ borderColor: award }}
-                className="rounded-xl w-full h-2/5 sm:h-52 sm:w-96 border-4 sm:mr-8 overflow-hidden">
-                <img src={thumbnail} className="w-full object-cover object-center" alt="featured project" />
+                className="rounded-xl w-full h-36 sm:h-52 sm:w-96 border-4 sm:mr-8 overflow-hidden">
+                <img
+                    src={thumbnail}
+                    className="w-full h-full object-cover object-center"
+                    alt="featured project"
+                />
             </div>
             <div className="py-1 flex flex-row justify-start">
                 <div className="flex flex-col">
@@ -16,7 +20,7 @@ export default function SearchCard({ name, title, projectType, thumbnail, profil
                     </div>
                     <img
                         src={profileIcon}
-                        className="sm:my-5 rounded-full sm:h-16 sm:w-16 h-8 w-8 float-right"
+                        className="sm:my-5 my-2 rounded-full sm:h-16 sm:w-16 h-8 w-8 float-right"
                         alt="Profile"
                     />
                 </div>
