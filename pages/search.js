@@ -46,7 +46,7 @@ export default function Search() {
                             );
                         })
                     ) : (
-                        <p className="px-2 text-xl font-rubik">
+                        <p className="px-2 sm:text-xl text-base font-rubik">
                             {searchVal === ""
                                 ? "Enter your search above."
                                 : "Nothing was found for this query."}
