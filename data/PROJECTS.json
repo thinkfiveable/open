@@ -14,5 +14,29 @@
         "projectType": "Discord Bot",
         "repoOwnerIcon": "https://avatars.githubusercontent.com/u/66260572?v=4",
         "award": "silver"
+    },
+    {
+        "repoName": "movie-picker",
+        "repoOwner": "DBlack2021",
+        "repoLogo": "https://source.unsplash.com/random",
+        "projectType": "Web App",
+        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/32969884?v=4",
+        "award": "silver"
+    },
+    {
+        "repoName": "maya",
+        "repoOwner": "ThinkFiveable",
+        "repoLogo": "https://github.com/cnnor/Maya/raw/main/banner.png",
+        "projectType": "Discord Bot",
+        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/65705509?v=4",
+        "award": "silver"
+    },
+    {
+        "repoName": "guilded.js",
+        "repoOwner": "guildedjs",
+        "repoLogo": "https://github.com/guildedjs/guilded.js/raw/master/media/readme-header.png",
+        "projectType": "Library",
+        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/74681032?v=4",
+        "award": "silver"
     }
 ]
