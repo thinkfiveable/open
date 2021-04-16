@@ -1,17 +1,17 @@
-export default function Card({ name, title, projectType, thumbnail, profileIcon, award }) {
+export default function Card({ ownerName, projectTitle, projectType, projectThumbnail, profileIcon, award }) {
     return (
         <div className="py-4">
             <div
                 style={{ borderColor: award }}
                 className="rounded-xl h-52 w-3/4 overflow-hidden border-4 mx-auto">
-                <img src={thumbnail} alt="featured project" />
+                <img src={projectThumbnail} alt="featured project" />
             </div>
             <div className="flex flex-row pt-4 justify-around">
                 <div className="flex flex-col">
-                    <h2 className="font-rubik font-medium text-xl">{title}</h2>
+                    <h2 className="font-rubik font-medium text-xl">{projectTitle}</h2>
                     <div className="flex flex-row">
                         <p className="font-mono">
-                            {name} • {projectType}
+                            {ownerName} • {projectType}
                         </p>
                     </div>
                 </div>
