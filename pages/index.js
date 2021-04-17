@@ -5,6 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import HeadObject from "../components/head";
+import SearchBar from "../components/searchbar";
 import RepoData from "../data/PROJECTS.json";
 
 export default function Home() {
@@ -14,12 +15,16 @@ export default function Home() {
             <main>
                 <section className="flex flex-col space-y-10 bg-blue px-12 md:px-20 py-12">
                     <div className="mt-10 sm:mt-0">
-                        <div className="flex flex-col md:flex-row md:space-x-5">
-                            <h1 className="font-rubik font-bold text-5xl sm:text-6xl">Fiveable</h1>
-                            <div className="font-mono font-medium text-2xl leading-none md:self-center">
-                                Open <div className="inline md:block">Source</div>
+                        <div className="flex flex-row md:justify-between">
+                            <div className="flex flex-col md:flex-row md:space-x-5">
+                                <h1 className="font-rubik font-bold text-5xl sm:text-6xl">Fiveable</h1>
+                                <div className="font-mono font-medium text-2xl leading-none md:self-center">
+                                    Open <div className="inline md:block">Source</div>
+                                </div>
                             </div>
+                            <SearchBar />
                         </div>
+
                         <a
                             className="md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
                             href="https://github.com/thinkfiveable/open">
