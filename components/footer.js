@@ -1,16 +1,18 @@
 export default function Footer() {
     return (
         <div className="footer">
-            <svg id="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 200">
+            <svg id="footer-svg" className="-mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#171717"
                     fillOpacity="1"
-                    d="M0,288L40,266.7C80,245,160,203,240,176C320,149,400,139,480,138.7C560,139,640,149,720,165.3C800,181,880,203,960,197.3C1040,192,1120,160,1200,149.3C1280,139,1360,149,1400,154.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                    d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,240C672,224,768,192,864,197.3C960,203,1056,245,1152,250.7C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
                 />
             </svg>
             <div className="bg-black text-white font-medium flex flex-col space-y-5 md:flex-row md:space-y-0 py-5 md:px-20">
                 <div className="flex-1 flex justify-between items-center pl-4 md:pl-0">
-                    <div>&#169; Fiveable 2021 | All Rights Reserved.</div>
+                    <div className="text-center md:text-left">
+                        &#169; Fiveable 2021 | All Rights Reserved.
+                    </div>
                 </div>
                 <ul className="flex flex-col items-center md:flex-row space-y-5 md:space-x-5 md:space-y-0">
                     <li>Docs</li>
