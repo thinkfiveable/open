@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <div className="footer">
@@ -15,7 +17,11 @@ export default function Footer() {
                     </div>
                 </div>
                 <ul className="flex flex-col items-center md:flex-row space-y-5 md:space-x-5 md:space-y-0">
-                    <li>Docs</li>
+                    <li>
+                        <Link href="/docs/git">
+                            <a>Docs</a>
+                        </Link>
+                    </li>
                     <li>Contributors</li>
                     <li>
                         <a
