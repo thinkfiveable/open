@@ -4,7 +4,7 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import Footer from "./footer";
 import HeadObject from "./head";
 
-export default function Layout({ subtitle, title, children }) {
+function Layout({ subtitle, title, authorPfp, authorName, author, publishDate, children }) {
     return (
         <div>
             <HeadObject />
@@ -16,8 +16,21 @@ export default function Layout({ subtitle, title, children }) {
                 </Link>
                 <div>
                     <h1 className="font-rubik font-bold text-6xl">{title}</h1>
-                    <h3 className="font-rubik text-2xl">{subtitle}</h3>
+                    {subtitle && <h3 className="font-rubik text-2xl">{subtitle}</h3>}
                 </div>
+                {author && (
+                    <div className="flex flex-row align-middle space-x-3">
+                        <img src={authorPfp} alt={authorName} className="w-14 h-14 rounded-full" />
+                        <div className="-space-y-1">
+                            <p className="font-mono font-medium text-2xl">{authorName}</p>
+                            <p className="font-rubik font-light text-lg">{publishDate}</p>
+                        </div>
+                    </div>
+                )}
+                {/* <div className="flex flex-row">
+                    <img src={authorPfp} alt={authorName} className="w-12 h-12 rounded-full" />
+                    <p>{authorName}</p>
+                </div> */}
             </section>
             <svg className="transform rotate-180 -mt-1 md:-mt-5 z-0 absolute" viewBox="0 0 1440 320">
                 <path
@@ -30,3 +43,5 @@ export default function Layout({ subtitle, title, children }) {
         </div>
     );
 }
+
+export default Layout;

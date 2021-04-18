@@ -41,10 +41,28 @@ const CustomSubheading = (props) => {
     );
 };
 
+const UnorderedList = (props) => {
+    return (
+        <ul className="list-disc list-inside" {...props}>
+            {props.children}
+        </ul>
+    );
+};
+
+const OrderedList = (props) => {
+    return (
+        <ol className="list-decimal list-inside" {...props}>
+            {props.children}
+        </ol>
+    );
+};
+
 const MDXComponents = {
     h1: CustomHeader,
     h2: CustomSubheading,
-    a: CustomLink
+    a: CustomLink,
+    ul: UnorderedList,
+    ol: OrderedList
 };
 
 export default MDXComponents;
