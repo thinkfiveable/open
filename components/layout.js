@@ -27,10 +27,6 @@ function Layout({ subtitle, title, authorPfp, authorName, author, publishDate, c
                         </div>
                     </div>
                 )}
-                {/* <div className="flex flex-row">
-                    <img src={authorPfp} alt={authorName} className="w-12 h-12 rounded-full" />
-                    <p>{authorName}</p>
-                </div> */}
             </section>
             <svg className="transform rotate-180 -mt-1 md:-mt-5 z-0 absolute" viewBox="0 0 1440 320">
                 <path
