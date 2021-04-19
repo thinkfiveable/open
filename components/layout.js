@@ -19,7 +19,7 @@ function Layout({ subtitle, title, authors, publishDate, children }) {
                     {subtitle && <h3 className="font-rubik text-2xl">{subtitle}</h3>}
                 </div>
                 {authors?.length && (
-                    <div className="flex flex-row space-x-10">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
                         {authors.map((author) => (
                             <div key={author.name} className="flex flex-col space-y-2">
                                 <img src={author.icon} alt={author.name} className="w-14 h-14 rounded-full" />
