@@ -84,15 +84,18 @@ export default function Home() {
                 </svg>
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {RepoData.map(({ repoName, repoOwner, projectType, repoLogo, award }) => (
-                        <Card
-                            key={repoName}
-                            owner={repoOwner}
-                            title={repoName}
-                            type={projectType}
-                            thumbnail={repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)}
-                            profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
-                            award={award ?? "silver"}
-                        />
+                        <a key={repoName} href={`https://github.com/${repoOwner}/${repoName}`}>
+                            <Card
+                                owner={repoOwner}
+                                title={repoName}
+                                type={projectType}
+                                thumbnail={
+                                    repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
+                                }
+                                profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
+                                award={award ?? "silver"}
+                            />
+                        </a>
                     ))}
                 </div>
             </main>
