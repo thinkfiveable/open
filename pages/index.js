@@ -56,9 +56,9 @@ export default function Home() {
                     {RepoData.map(({ repoName, repoOwner, projectType, repoLogo, award }) => (
                         <Card
                             key={repoName}
-                            name={repoOwner}
+                            owner={repoOwner}
                             title={repoName}
-                            projectType={projectType}
+                            type={projectType}
                             thumbnail={repoLogo ?? "https://avatars.githubusercontent.com/u/76849512?v=4"}
                             profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
                             award={award ?? "silver"}
