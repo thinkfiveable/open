@@ -53,28 +53,17 @@ export default function Home() {
                     />
                 </svg>
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {RepoData.map(({ repoName, repoOwner, projectType, repoLogo, repoOwnerIcon, award }) => {
-                        return (
-                            <div key={repoName}>
-                                <a href={`https://github.com/${repoOwner}/${repoName}`}>
-                                    <Card
-                                        ownerName={repoOwner}
-                                        projectTitle={repoName}
-                                        projectType={projectType}
-                                        projectThumbnail={
-                                            repoLogo ??
-                                            encodeURI(`https://og-image.vercel.app/${repoName}.png`)
-                                        }
-                                        profileIcon={
-                                            repoOwnerIcon ??
-                                            "https://avatars.githubusercontent.com/u/76849512?v=4"
-                                        }
-                                        award={award ?? "silver"}
-                                    />
-                                </a>
-                            </div>
-                        );
-                    })}
+                    {RepoData.map(({ repoName, repoOwner, projectType, repoLogo, award }) => (
+                        <Card
+                            key={repoName}
+                            name={repoOwner}
+                            title={repoName}
+                            projectType={projectType}
+                            thumbnail={repoLogo ?? "https://avatars.githubusercontent.com/u/76849512?v=4"}
+                            profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
+                            award={award ?? "silver"}
+                        />
+                    ))}
                 </div>
             </main>
             <Footer />
