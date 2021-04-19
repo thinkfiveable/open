@@ -89,7 +89,7 @@ export default function Home() {
                             owner={repoOwner}
                             title={repoName}
                             type={projectType}
-                            thumbnail={repoLogo ?? "https://avatars.githubusercontent.com/u/76849512?v=4"}
+                            thumbnail={repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)}
                             profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
                             award={award ?? "silver"}
                         />
