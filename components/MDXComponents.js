@@ -35,16 +35,34 @@ const CustomHeader = (props) => {
 
 const CustomSubheading = (props) => {
     return (
-        <h2 className="text-3xl font-medium font-rubik mt-4 mb-2 md:mt-0 md:mb-0 md:leading-loose" {...props}>
+        <h2 className="text-3xl font-medium font-rubik mt-4 mb-2 md:mb-0 md:leading-loose" {...props}>
             {props.children}
         </h2>
+    );
+};
+
+const UnorderedList = (props) => {
+    return (
+        <ul className="list-disc list-inside" {...props}>
+            {props.children}
+        </ul>
+    );
+};
+
+const OrderedList = (props) => {
+    return (
+        <ol className="list-decimal list-inside" {...props}>
+            {props.children}
+        </ol>
     );
 };
 
 const MDXComponents = {
     h1: CustomHeader,
     h2: CustomSubheading,
-    a: CustomLink
+    a: CustomLink,
+    ul: UnorderedList,
+    ol: OrderedList
 };
 
 export default MDXComponents;
