@@ -2,14 +2,12 @@
     {
         "repoName": "hangman",
         "repoOwner": "shreeyachand",
-        "repoLogo": "https://source.unsplash.com/random",
         "projectType": "Game",
         "award": "silver"
     },
     {
         "repoName": "discord-botboi-bot",
         "repoOwner": "alt-ab",
-        "repoLogo": "https://source.unsplash.com/random",
         "projectType": "Discord Bot",
         "award": "silver"
     },

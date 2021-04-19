@@ -1,4 +1,4 @@
-export default function Card({ name, title, projectType, thumbnail, profileIcon, award }) {
+export default function Card({ owner, title, type, thumbnail, profileIcon, award }) {
     return (
         <div className="py-4">
             <div
@@ -11,7 +11,7 @@ export default function Card({ name, title, projectType, thumbnail, profileIcon,
                     <h2 className="font-rubik font-medium text-xl">{title}</h2>
                     <div className="flex flex-row">
                         <p className="font-mono">
-                            {name} • {projectType}
+                            {owner} • {type}
                         </p>
                     </div>
                 </div>
