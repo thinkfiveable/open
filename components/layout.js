@@ -4,7 +4,7 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import Footer from "./footer";
 import HeadObject from "./head";
 
-function Layout({ subtitle, title, authorPfp, authorName, author, publishDate, children }) {
+function Layout({ subtitle, title, authors, publishDate, children }) {
     return (
         <div>
             <HeadObject />
@@ -18,13 +18,17 @@ function Layout({ subtitle, title, authorPfp, authorName, author, publishDate, c
                     <h1 className="font-rubik font-bold text-6xl">{title}</h1>
                     {subtitle && <h3 className="font-rubik text-2xl">{subtitle}</h3>}
                 </div>
-                {author && (
-                    <div className="flex flex-row align-middle space-x-3">
-                        <img src={authorPfp} alt={authorName} className="w-14 h-14 rounded-full" />
-                        <div className="-space-y-1">
-                            <p className="font-mono font-medium text-2xl">{authorName}</p>
-                            <p className="font-rubik font-light text-lg">{publishDate}</p>
-                        </div>
+                {authors?.length && (
+                    <div className="inline-flex flex-row align-middle space-x-2">
+                        {authors.map((author) => (
+                            <div key={author.name} className="flex-1 flex-row align-middle">
+                                <img src={author.icon} alt={author.name} className="w-14 h-14 rounded-full" />
+                                <div className="space-y-0.5">
+                                    <p className="font-mono font-medium text-2xl">{author.name}</p>
+                                    <p className="font-rubik font-light text-lg">{publishDate}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 )}
             </section>
