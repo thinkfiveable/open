@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
+import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 
@@ -9,6 +11,26 @@ import SearchBar from "../components/searchbar";
 import RepoData from "../data/PROJECTS.json";
 
 export default function Home() {
+    const headerOutputRange = [
+        `M0,192L48,197.3C96,203,192,213,288,208C384,203,480,181,576,176C672,171,768,181,864,192C960,203,1056,213,1152,213.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z`,
+        `M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z`,
+        `M0,224L48,218.7C96,213,192,203,288,202.7C384,203,480,213,576,234.7C672,256,768,288,864,277.3C960,267,1056,213,1152,192C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z`,
+        `M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,240C672,224,768,192,864,197.3C960,203,1056,245,1152,250.7C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z`
+    ];
+    const headerClipPathVariants = {
+        beginning: {
+            d: headerOutputRange[0]
+        },
+        middle: {
+            d: headerOutputRange[1]
+        },
+        middle2: {
+            d: headerOutputRange[2]
+        },
+        end: {
+            d: headerOutputRange[3]
+        }
+    };
     return (
         <div>
             <HeadObject />
@@ -47,9 +69,17 @@ export default function Home() {
                     </Link>
                 </section>
                 <svg className="transform rotate-180 -mt-1 md:-mt-5" viewBox="0 0 1440 320">
-                    <path
+                    <motion.path
                         fill="#c1e8ed"
-                        d="M0 64h24c24 0 72 0 120 5.3 48 5.7 96 15.7 144 37.4 48 21.3 96 53.3 144 80 48 26.3 96 48.3 144 64C624 267 672 277 720 272s96-27 144-42.7c48-16.3 96-26.3 144-32 48-5.3 96-5.3 144 16 48 21.7 96 63.7 144 69.4 48 5.3 96-26.7 120-42.7l24-16v96H0z"
+                        d={headerOutputRange[0]}
+                        initial="beginning"
+                        variants={headerClipPathVariants}
+                        animate={["middle", "middle2", "end"]}
+                        transition={{
+                            duration: 5,
+                            repeat: Infinity,
+                            repeatType: "mirror"
+                        }}
                     />
                 </svg>
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
