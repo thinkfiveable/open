@@ -4,7 +4,6 @@
         "repoOwner": "shreeyachand",
         "repoLogo": "https://source.unsplash.com/random",
         "projectType": "Game",
-        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/76849512?v=4",
         "award": "silver"
     },
     {
@@ -12,7 +11,6 @@
         "repoOwner": "alt-ab",
         "repoLogo": "https://source.unsplash.com/random",
         "projectType": "Discord Bot",
-        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/66260572?v=4",
         "award": "silver"
     },
     {
@@ -20,7 +18,6 @@
         "repoOwner": "DBlack2021",
         "repoLogo": "https://source.unsplash.com/random",
         "projectType": "Web App",
-        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/32969884?v=4",
         "award": "silver"
     },
     {
@@ -28,7 +25,6 @@
         "repoOwner": "ThinkFiveable",
         "repoLogo": "https://github.com/cnnor/Maya/raw/main/banner.png",
         "projectType": "Discord Bot",
-        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/65705509?v=4",
         "award": "silver"
     },
     {
@@ -36,14 +32,13 @@
         "repoOwner": "guildedjs",
         "repoLogo": "https://github.com/guildedjs/guilded.js/raw/master/media/readme-header.png",
         "projectType": "Library",
-        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/74681032?v=4",
         "award": "silver"
     },
     {
         "repoName": "DeltaScheme",
         "repoOwner": "RayhanADev",
+        "repoLogo": "https://github.com/RayhanADev/DeltaScheme/blob/master/public/assets/images/logos/deltascheme_opengraphimage.png",
         "projectType": "Web App",
-        "repoOwnerIcon": "https://avatars.githubusercontent.com/u/72509475?v=4",
         "award": "silver"
     }
 ]
