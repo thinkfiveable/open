@@ -61,12 +61,21 @@ export default function Home() {
                     <h2 className="font-rubik font-medium text-3xl md:w-2/3 lg:w-2/5">
                         We&#39;re building a community for discovery and learning.
                     </h2>
-                    <Link href="/about">
-                        <a className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
-                            <div>Learn more.</div>
-                            <BsArrowRightShort size={30} />
-                        </a>
-                    </Link>
+                    <div className="flex flex-col space-y-2">
+                        <Link href="/about">
+                            <a className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 font-rubik font-medium bg-black text-center rounded-full px-5 py-1 text-lg text-white w-fitcontent flex flex-row cursor-pointer">
+                                <div>Learn more.</div>
+                                <BsArrowRightShort size={30} />
+                            </a>
+                        </Link>
+                        <p className="text-xs">
+                            Not sure where to start? Learn{" "}
+                            <Link href="/docs/git">
+                                <a className="underline font-bold">Git</a>
+                            </Link>
+                            .
+                        </p>
+                    </div>
                 </section>
                 <svg className="transform rotate-180 -mt-1 md:-mt-5" viewBox="0 0 1440 320">
                     <motion.path
