@@ -46,9 +46,9 @@ to open these files in your preferred text editor to make your changes.
 
 ## Checkout
 
-It is highly reccomended to switch to a new branch to make changes instead of committing to the master branch.
-Why? Say you commit to the master branch of your fork. You go ahead and make a PR, but oh no! Your PR was
-denied and was closed. You now have a problem, your master branch now has a bunch of commits that don't exist
+It is highly recommended to switch to a new branch to make changes instead of committing to the main branch.
+Why? Say you commit to the main branch of your fork. You go ahead and make a PR, but oh no! Your PR was
+denied and was closed. You now have a problem, your main branch now has a bunch of commits that don't exist
 on the upstream repo. **Your fork is now out of sync with the upstream repo.** You could just revert those
 commits, but now you have a bunch of revert commits polluting your commit history, and those will be added to
 the upstream repo if you make another PR. Or you could rebase and remove history (which would a require a
@@ -56,18 +56,14 @@ force push which we do NOT allow on this repo). Both of these options are not ve
 hassle to the maintainers and to the contributor themselves.
 
 Sounds like a lot right? It's better to prevent all of this from happening in the beginning by just making
-changes to a new branch every time. So say I want to add a bunch of badges to the readme, I'd make a branch
+changes to a new branch every time. So, say I want to add a bunch of badges to the readme, I'd make a branch
 `chore/readme-branch` or `chore/patch-1.`
 
 To create a new branch from your terminal, do the following:
 
 -   `git branch <branchname>` to create a new branch
--   `git checkout <branchname>` to swtich to your branch
+-   `git checkout <branchname>` to switch to your branch
 
-If you make a bunch of commits and forget to switch branches, you can use `git switch <branchname>` or
-`git switch -c <branchname>` which will switch to another branch and move your already-done commits to this
-new branch. Appending `-c` will create a new branch while `git switch <branchname>` switches to an existing
-branch.
 
 ## Pull
 
