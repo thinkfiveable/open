@@ -18,11 +18,13 @@ export default function SearchCard({ repoOwner, title, projectType, thumbnail, a
                             {repoOwner} • {projectType}
                         </p>
                     </div>
-                    <img
-                        src={`https://avatars.githubusercontent.com/${repoOwner}`}
-                        className="sm:my-5 my-2 rounded-full sm:h-16 sm:w-16 h-8 w-8 float-right"
-                        alt="Profile"
-                    />
+                    <a href={`https://github.com/${repoOwner}`}>
+                        <img
+                            src={`https://avatars.githubusercontent.com/${repoOwner}`}
+                            className="sm:my-5 my-2 rounded-full sm:h-16 sm:w-16 h-8 w-8 float-left"
+                            alt="Profile"
+                        />
+                    </a>
                 </div>
             </div>
         </div>

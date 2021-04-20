@@ -35,15 +35,18 @@ export default function Search() {
                     {results.length > 0 ? (
                         results.map(({ repoName, repoOwner, projectType, repoLogo }) => {
                             return (
-                                <SearchCard
-                                    key={repoName}
-                                    repoOwner={repoOwner}
-                                    title={repoName}
-                                    projectType={projectType}
-                                    thumbnail={
-                                        repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
-                                    }
-                                />
+                                <a key={repoName} href={`https://github.com/${repoOwner}/${repoName}`}>
+                                    <SearchCard
+                                        key={repoName}
+                                        repoOwner={repoOwner}
+                                        title={repoName}
+                                        projectType={projectType}
+                                        thumbnail={
+                                            repoLogo ??
+                                            encodeURI(`https://og-image.vercel.app/${repoName}.png`)
+                                        }
+                                    />
+                                </a>
                             );
                         })
                     ) : (
