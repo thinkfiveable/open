@@ -17,18 +17,18 @@ function Layout({ subtitle, title, authors, publishDate, children }) {
                 <div>
                     <h1 className="font-rubik font-bold text-6xl">{title}</h1>
                     {subtitle && <h3 className="font-rubik text-2xl">{subtitle}</h3>}
+                    <p className="font-rubik font-light text-2xl leading-relaxed">{publishDate}</p>
                 </div>
                 {authors?.length && (
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
+                    <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 space-x-0">
                         {authors.map((author) => (
-                            <div key={author.name} className="flex flex-col space-y-2">
-                                <img src={author.icon} alt={author.name} className="w-14 h-14 rounded-full" />
+                            <div key={author.name} className="flex flex-row space-x-2">
+                                <img src={author.icon} alt={author.name} className="w-8 h-8 rounded-full" />
                                 <p className="font-mono font-medium text-xl">{author.name}</p>
                             </div>
                         ))}
                     </div>
                 )}
-                <p className="font-rubik font-light text-lg">{publishDate}</p>
             </section>
             <svg className="transform rotate-180 -mt-1 md:-mt-5 z-0 absolute" viewBox="0 0 1440 320">
                 <path
