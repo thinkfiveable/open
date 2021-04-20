@@ -15,7 +15,9 @@ export default function Card({ owner, title, type, thumbnail, profileIcon, award
                         </p>
                     </div>
                 </div>
-                <img src={profileIcon} className="rounded-full h-12 w-12 float-right" alt="Profile" />
+                <a href={`https://github.com/${owner}`}>
+                    <img src={profileIcon} className="rounded-full h-12 w-12 float-right" alt="Profile" />
+                </a>
             </div>
         </div>
     );
