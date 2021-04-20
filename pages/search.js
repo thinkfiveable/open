@@ -33,17 +33,16 @@ export default function Search() {
                     </div>
 
                     {results.length > 0 ? (
-                        results.map(({ repoName, repoOwner, projectType, repoLogo, repoOwnerIcon }) => {
+                        results.map(({ repoName, repoOwner, projectType, repoLogo }) => {
                             return (
                                 <SearchCard
                                     key={repoName}
-                                    name={repoOwner}
+                                    repoOwner={repoOwner}
                                     title={repoName}
                                     projectType={projectType}
                                     thumbnail={
                                         repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
                                     }
-                                    profileIcon={repoOwnerIcon}
                                 />
                             );
                         })
