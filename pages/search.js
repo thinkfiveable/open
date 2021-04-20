@@ -40,7 +40,9 @@ export default function Search() {
                                     name={repoOwner}
                                     title={repoName}
                                     projectType={projectType}
-                                    thumbnail={repoLogo}
+                                    thumbnail={
+                                        repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
+                                    }
                                     profileIcon={repoOwnerIcon}
                                 />
                             );
