@@ -5,10 +5,23 @@ export default (children) => (
     <div>
         <Layout
             title="Getting Started with Git/GitHub"
-            author="something"
-            authorPfp="https://avatars.githubusercontent.com/julialding"
-            authorName="Julia Ding"
-            publishDate="March 27, 2020"
+            authors={
+                [
+                    {
+                        "icon": "https://avatars.githubusercontent.com/julialding",
+                        "name": "Julia Ding",
+                    },
+                    {
+                        "icon": "https://avatars.githubusercontent.com/eilla1",
+                        "name": "Ella",
+                    },
+                    {
+                        "icon": "https://avatars.githubusercontent.com/zaida04",
+                        "name": "Zaid (Nico)",
+                    },
+                ]
+            }
+            publishDate="March 27, 2021"
             {...children}
         />
     </div>
