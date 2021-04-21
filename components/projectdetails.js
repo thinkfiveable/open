@@ -50,6 +50,8 @@ export default function Modal({
                                         <a
                                             key={title}
                                             href={`https://github.com/${owner}/${title}`}
+                                            target="_blank"
+                                            rel="noreferrer"
                                             className="hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full">
                                             <FiGithub size={30} />
                                         </a>
@@ -60,7 +62,10 @@ export default function Modal({
                                             {title}
                                         </h3>
                                         <div className="flex flex-row items-center justify-center space-x-2 pb-3">
-                                            <a href={`https://github.com/${owner}`}>
+                                            <a
+                                                href={`https://github.com/${owner}`}
+                                                target="_blank"
+                                                rel="noreferrer">
                                                 <img
                                                     src={profileIcon}
                                                     alt="GitHub user profile"
