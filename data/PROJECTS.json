@@ -3,39 +3,52 @@
         "repoName": "hangman",
         "repoOwner": "shreeyachand",
         "projectType": "Game",
-        "award": "silver"
+        "award": "silver",
+        "projectDescription": "This is a simple hangman game written in Java, with no external libraries. Players choose from two lists of words, easy or hard, and then guess the word the program gives them letter by letter (or they can try the whole word) before they run out of tries. Read the README file for more information and feel free to open an issue if you have additional questions/feedback about the program. "
     },
     {
         "repoName": "discord-botboi-bot",
         "repoOwner": "alt-ab",
         "projectType": "Discord Bot",
-        "award": "silver"
+        "award": "silver",
+        "projectDescription": "A fun, get-to-know you Discord bot with over 15+ commands! It’s light-weight and hosted! I built it as one of my first project ideas, and I was able to develop off this concept for a programming apprenticeship I had! "
     },
     {
         "repoName": "movie-picker",
         "repoOwner": "DBlack2021",
         "projectType": "Web App",
-        "award": "silver"
+        "award": "silver",
+        "projectDescription": "This project targets people who are struggling to figure out a TV show / movie to watch. Users can search for TV shows and movies and then pick one at random. Afterwards they can view stats about the movie and look at the cast and crew."
     },
     {
         "repoName": "maya",
         "repoOwner": "ThinkFiveable",
         "repoLogo": "https://github.com/cnnor/Maya/raw/main/banner.png",
         "projectType": "Discord Bot",
-        "award": "silver"
+        "award": "silver",
+        "projectDescription": "Maya is a multi-purpose, community-driven, single-guild Discord bot built for the Fiveable student community. It was built with functionality and customizability in mind, offering featurful moderation commands, utilities, reaction roles, and channel linking."
     },
     {
         "repoName": "guilded.js",
         "repoOwner": "guildedjs",
         "repoLogo": "https://github.com/guildedjs/guilded.js/raw/master/media/readme-header.png",
         "projectType": "Library",
-        "award": "silver"
+        "award": "silver",
+        "projectDescription": "Tools for interacting with the guilded.gg API. Usable in either JavaScript or TypeScript projects."
     },
     {
         "repoName": "DeltaScheme",
         "repoOwner": "RayhanADev",
         "repoLogo": "https://raw.githubusercontent.com/RayhanADev/DeltaScheme/master/public/assets/images/logos/deltascheme_opengraphimage.png",
         "projectType": "Web App",
-        "award": "silver"
+        "award": "silver",
+        "projectDescription": "This is DeltaScheme. DeltaScheme simulates the business model of a Pyramid Scheme, except on the Internet, turning the horrific business model into a friendly game. The only way to sign up for the site is with a special code given out by recruiters. New members can then send their code out to more people and invite them for tokens! Created using NodeJS, Express, Cloud Firestore, GraphQL, and more! **Still a Work In Progress, Feel Free to Contribute**"
+    },
+    {
+        "repoName": "Lucia",
+        "repoOwner": "aidenybai",
+        "projectType": "Library",
+        "award": "silver",
+        "projectDescription": "An augmentation layer for your webapp logic, allowing you to bind attributes to your HTML to add interactivity without writing any extra JavaScript. I built it with TypeScript and other tooling. Please read the Wiki if you are interested in contributing! https://github.com/aidenybai/lucia/wiki"
     }
 ]
