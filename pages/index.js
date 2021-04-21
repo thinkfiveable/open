@@ -7,6 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import HeadObject from "../components/head";
+import Modal from "../components/projectdetails";
 import SearchBar from "../components/searchbar";
 import RepoData from "../data/PROJECTS.json";
 
@@ -107,6 +108,9 @@ export default function Home() {
                         </a>
                     ))}
                 </div>
+
+                {/** test modal */}
+                <Modal />
             </main>
             <Footer />
         </div>
