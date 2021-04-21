@@ -15,7 +15,7 @@ export default function Modal({
     return (
         <div>
             <div
-                className="py-4"
+                className="py-4 focus:outline-none focus:border-gray-100"
                 role="button"
                 tabIndex={0}
                 onKeyDown={handleKeyDown}
@@ -43,7 +43,6 @@ export default function Modal({
                 <>
                     <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                            {/* content */}
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 {/* Modal header */}
                                 <div className="flex flex-col justify-center w-full pt-12 pb-5 px-5 space-y-3 bg-blue rounded-t-lg">
