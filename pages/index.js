@@ -4,7 +4,6 @@ import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 
-import Card from "../components/card";
 import Footer from "../components/footer";
 import HeadObject from "../components/head";
 import Modal from "../components/projectdetails";
@@ -92,25 +91,25 @@ export default function Home() {
                         }}
                     />
                 </svg>
+
+                {/** test modal */}
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {RepoData.map(({ repoName, repoOwner, projectType, repoLogo, award }) => (
-                        <a key={repoName} href={`https://github.com/${repoOwner}/${repoName}`}>
-                            <Card
+                    {RepoData.map(
+                        ({ repoName, repoOwner, projectType, repoLogo, projectDescription, award }) => (
+                            <Modal
                                 owner={repoOwner}
                                 title={repoName}
                                 type={projectType}
+                                description={projectDescription}
                                 thumbnail={
                                     repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
                                 }
                                 profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
                                 award={award ?? "silver"}
                             />
-                        </a>
-                    ))}
+                        )
+                    )}
                 </div>
-
-                {/** test modal */}
-                <Modal />
             </main>
             <Footer />
         </div>
