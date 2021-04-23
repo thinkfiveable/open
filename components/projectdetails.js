@@ -48,9 +48,9 @@ export default function Modal({
                         exit={{ opacity: 0 }}
                         drag
                         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 outline-none focus:outline-none z-50 max-w-xl my-auto mx-auto">
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                            <div className="transition duration-700 ease-in-out border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none overflow-y-auto max-h-96 md:max-h-screen">
+                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none overflow-y-auto max-h-96 md:max-h-full">
                                 {/* Modal header */}
                                 <div className="flex flex-col justify-center w-full pt-12 pb-5 px-5 space-y-3 bg-blue rounded-t-lg">
                                     <div className="flex justify-end px-4">
@@ -59,7 +59,7 @@ export default function Modal({
                                             href={`https://github.com/${owner}/${title}`}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full">
+                                            className="hover:text-gray-500 rounded-full">
                                             <FiGithub size={30} />
                                         </a>
                                     </div>
@@ -101,7 +101,13 @@ export default function Modal({
                             </div>
                         </div>
                     </motion.div>
-                    <div className="opacity-25 fixed inset-0 bg-black" />
+                    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+                    {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+                    <div
+                        className="opacity-25 fixed inset-0 bg-black z-0"
+                        onKeyDown={handleKeyDown}
+                        onClick={() => setShowModal(false)}
+                    />
                 </AnimatePresence>
             ) : null}
         </div>

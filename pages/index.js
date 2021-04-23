@@ -92,7 +92,6 @@ export default function Home() {
                     />
                 </svg>
 
-                {/** test modal */}
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {RepoData.map(
                         ({ repoName, repoOwner, projectType, repoLogo, projectDescription, award }) => (
