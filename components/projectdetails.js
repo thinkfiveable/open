@@ -1,6 +1,6 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { FiGithub } from "react-icons/fi";
-// import { FaLink } from "react-icons/fa";
 
 export default function Modal({
     owner,
@@ -41,8 +41,14 @@ export default function Modal({
                 </div>
             </div>
             {showModal ? (
-                <>
-                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                <AnimatePresence>
+                    <motion.div
+                        initial={{ x: 300, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        drag
+                        dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
                             <div className="transition duration-700 ease-in-out border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none overflow-y-auto max-h-96 md:max-h-screen">
                                 {/* Modal header */}
@@ -94,14 +100,9 @@ export default function Modal({
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-                    <div
-                        className="opacity-25 fixed inset-0 bg-black"
-                        onClick={() => setShowModal(false)}
-                        onKeyDown={handleKeyDown}
-                    />
-                </>
+                    </motion.div>
+                    <div className="opacity-25 fixed inset-0 bg-black" />
+                </AnimatePresence>
             ) : null}
         </div>
     );
