@@ -4,7 +4,7 @@ export default function Card({ owner, title, type, thumbnail, profileIcon, award
             <div
                 style={{ borderColor: award }}
                 className="rounded-xl h-52 w-3/4 overflow-hidden border-4 mx-auto">
-                <img src={thumbnail} alt="featured project" />
+                <img className="h-full" src={thumbnail} alt="featured project" />
             </div>
             <div className="flex flex-row pt-4 justify-around">
                 <div className="flex flex-col">
