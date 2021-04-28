@@ -1,4 +1,4 @@
-ame: Lint and Format
+name: Lint and Format
 on: 
   push:
     branches:
