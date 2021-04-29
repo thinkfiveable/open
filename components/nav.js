@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { CgDarkMode } from "react-icons/cg";
+import { FiGithub } from "react-icons/fi";
+
+import SearchBar from "./searchbar";
 
 const links = [
     { label: "Page 1", href: "/" },
@@ -12,19 +15,19 @@ export default function Nav() {
     const { theme, setTheme } = useTheme();
     return (
         <nav className="dark:text-white">
-            <ul className="flex flex-wrap sm:justify-between items-start sm:items-center p-8 mt-6 sm:mt-0">
-                <li>Perfect Next.js Theme</li>
+            <ul className="flex flex-wrap sm:justify-between items-start sm:items-center">
                 <ul className="mx-auto sm:mx-0 flex flex-row space-x-5">
-                    {links.map(({ href, label }) => (
-                        <li className="self-center" key={`${href}${label}`}>
-                            <Link href={href}>
-                                <a className="font-inter px-4 py-2 rounded hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10">
-                                    {label}
-                                </a>
-                            </Link>
-                        </li>
-                    ))}
                     <li>
+                        <SearchBar />
+                    </li>
+                    <li className="self-center">
+                        <Link href="https://github.com/thinkfiveable/open">
+                            <a className="p-3 block rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 transform duration-200">
+                                <FiGithub size={28} />
+                            </a>
+                        </Link>
+                    </li>
+                    <li className="self-center">
                         <button
                             type="button"
                             onClick={() => {
@@ -33,7 +36,7 @@ export default function Nav() {
                             }}
                             className="p-2 rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 transform duration-200"
                             id="theme_toggle">
-                            <CgDarkMode size={24} />
+                            <CgDarkMode size={32} />
                         </button>
                     </li>
                 </ul>

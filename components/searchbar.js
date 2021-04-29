@@ -9,7 +9,7 @@ export default function SearchBar() {
         router.push(`/search?q=${search}`);
     };
     return (
-        <div className="m-2 flex flex-row rounded-full bg-white dark:bg-black dark:bg-opacity-25 focus-within:ring-4 focus-within:ring-white focus-within:ring-opacity-25 sm:h-auto sm:w-3/5 md:w-2/5 sm:mr-8 md:mr-16">
+        <div className="m-2 w-auto flex flex-row rounded-full bg-white dark:bg-black dark:bg-opacity-25 focus-within:ring-4 focus-within:ring-white focus-within:ring-opacity-25">
             <input
                 type="text"
                 className="bg-transparent dark:placeholder-blue focus:outline-none hidden w-full sm:block p-2 px-4 text-xl font-rubik"

@@ -7,7 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import HeadObject from "../components/head";
-import SearchBar from "../components/searchbar";
+import Nav from "../components/nav";
 import RepoData from "../data/PROJECTS.json";
 
 export default function Home() {
@@ -44,19 +44,8 @@ export default function Home() {
                                     Open <div className="inline md:block">Source</div>
                                 </div>
                             </div>
-                            <SearchBar />
+                            <Nav />
                         </div>
-
-                        <a
-                            className="md:hidden hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
-                            href="https://github.com/thinkfiveable/open">
-                            <FiGithub size={30} />
-                        </a>
-                        <a
-                            className="hidden sm:block hover:text-gray-500 absolute top-4 right-4 sm:top-8 sm:right-8 p-4 bg-white rounded-full"
-                            href="https://github.com/thinkfiveable/open">
-                            <FiGithub size={40} />
-                        </a>
                     </div>
                     <h2 className="font-rubik font-medium text-3xl md:w-2/3 lg:w-2/5">
                         We&#39;re building a community for discovery and learning.
