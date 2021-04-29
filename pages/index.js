@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
-import { FiGithub } from "react-icons/fi";
 
 import Card from "../components/card";
 import Footer from "../components/footer";

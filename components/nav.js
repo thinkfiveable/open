@@ -5,12 +5,6 @@ import { FiGithub } from "react-icons/fi";
 
 import SearchBar from "./searchbar";
 
-const links = [
-    { label: "Page 1", href: "/" },
-    { label: "Page 2", href: "/" },
-    { label: "Page 3", href: "/" }
-];
-
 export default function Nav() {
     const { theme, setTheme } = useTheme();
     return (
