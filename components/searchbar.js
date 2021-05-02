@@ -28,7 +28,7 @@ export default function SearchBar() {
             <button
                 type="button"
                 onClick={submit}
-                className="absolute top-26 bg-white rounded-full right-4 sm:relative p-4 sm:p-none">
+                className="absolute top-26 bg-white rounded-full right-4 sm:relative p-4 sm:p-none focus:outline-none">
                 <BsSearch className="sm:hidden" size={30} />
                 <BsSearch className="hidden sm:block" />
             </button>
