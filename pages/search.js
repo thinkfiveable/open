@@ -19,7 +19,7 @@ export default function Search() {
                     <div className="flex flex-col-reverse items-start sm:items-center sm:flex-row sm:justify-between">
                         <input
                             type="text"
-                            className="bg-transparent lg:w-2/5 sm:w-1/2 p-2 lg:text-4xl md:text-3xl font-rubik border-b-4 dark:border-white"
+                            className="bg-transparent lg:w-2/5 sm:w-1/2 p-2 lg:text-4xl md:text-3xl font-rubik border-b-4 border-black dark:border-white focus:border-opacity-50 dark:focus:border-opacity-50 focus:outline-none"
                             placeholder="Enter your query..."
                             name="search"
                             autoComplete="off"

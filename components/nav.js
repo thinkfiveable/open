@@ -28,7 +28,7 @@ export default function Nav() {
                                 setTheme(theme === "dark" ? "light" : "dark");
                                 document.querySelector("#theme_toggle").classList.toggle("rotate-180");
                             }}
-                            className="p-2 rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 transform duration-200"
+                            className="p-2 rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 focus:outline-none focus:bg-black dark:focus:bg-white focus:bg-opacity-20 dark:focus:bg-opacity-20 transform duration-200"
                             id="theme_toggle">
                             <CgDarkMode size={32} />
                         </button>
