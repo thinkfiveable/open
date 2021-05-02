@@ -12,7 +12,7 @@ export default function SearchBar() {
         <div className="m-2 flex flex-row rounded-full bg-white sm:h-auto sm:w-3/5 md:w-2/5 sm:mr-8 md:mr-16">
             <input
                 type="text"
-                className="bg-transparent hidden w-full sm:block p-2 px-4 text-xl font-rubik"
+                className="bg-transparent hidden w-full sm:block p-2 px-4 text-xl font-rubik focus:outline-none"
                 placeholder="Search projects"
                 autoComplete="off"
                 name="search"
