@@ -22,10 +22,9 @@ export default function Modal({
                 onKeyDown={handleKeyDown}
                 onClick={() => setShowModal(true)}>
                 <div
-                    style={{ borderColor: award }}
-                    className="rounded-xl h-52 w-3/4 overflow-hidden border-4 mx-auto">
-                    <img src={thumbnail} alt="featured project" />
-                </div>
+                    style={{ borderColor: award, backgroundImage: `url("${thumbnail}")` }}
+                    className="rounded-xl h-52 w-3/4 overflow-hidden bg-white bg-center bg-cover border-4 mx-auto"
+                />
                 <div className="flex flex-row pt-4 justify-around">
                     <div className="flex flex-col">
                         <h2 className="font-rubik font-medium text-xl">{title}</h2>

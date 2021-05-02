@@ -85,6 +85,7 @@ export default function Home() {
                     {RepoData.map(
                         ({ repoName, repoOwner, projectType, repoLogo, projectDescription, award }) => (
                             <Modal
+                                key={repoName}
                                 owner={repoOwner}
                                 title={repoName}
                                 type={projectType}
