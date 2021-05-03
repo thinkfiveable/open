@@ -64,9 +64,7 @@ export default function Contributors() {
     }, []);
 
     return (
-        <section
-            className="flex-col p-8 card flex w-2/4 "
-            style={{ background: "#e5e5e5", margin: "0 auto" }}>
+        <section className="flex-col p-8 lg:w-2/4" style={{ background: "#e5e5e5", margin: "0 auto" }}>
             {usersDetails
                 ? usersDetails.map((user, i) => (
                       <Contributor
