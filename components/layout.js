@@ -15,7 +15,7 @@ function Layout({ subtitle, title, authors, publishDate, children }) {
                     </div>
                 </Link>
                 <div>
-                    <h1 className="font-rubik font-bold text-6xl">{title}</h1>
+                    <h1 className="font-rubik font-bold lg:text-6xl text-4xl">{title}</h1>
                     {subtitle && <h3 className="font-rubik text-2xl">{subtitle}</h3>}
                     <p className="font-rubik font-light text-2xl leading-relaxed">{publishDate}</p>
                 </div>
