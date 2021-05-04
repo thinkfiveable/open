@@ -28,9 +28,14 @@ export default function SearchBar() {
             <button
                 type="button"
                 onClick={submit}
-                className="absolute focus:outline-none top-26 rounded-full right-4 sm:relative p-4 sm:p-none">
-                <BsSearch className="sm:hidden" size={30} />
-                <BsSearch className="hidden sm:block" />
+                className="hidden sm:block focus:outline-none right-4 sm:relative p-4">
+                <BsSearch />
+            </button>
+            <button type="button" onClick={submit}>
+                <BsSearch
+                    className="sm:hidden p-2 rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 focus:outline-none focus:bg-black dark:focus:bg-white focus:bg-opacity-20 dark:focus:bg-opacity-20 transform duration-200"
+                    size={28}
+                />
             </button>
         </div>
     );
