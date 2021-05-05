@@ -23,7 +23,7 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/docs/contributor">
+                        <Link href="/contributors">
                             <a>Contributors</a>
                         </Link>
                     </li>

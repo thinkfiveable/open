@@ -45,7 +45,7 @@ function Contributor({ name, contributions, avatar }) {
     const checkUserStatus = maintainersName.find(({ login }) => login === name) !== undefined;
 
     return (
-        <div className="flex m-4">
+        <div className="flex w-full m-2 lg:flex-2">
             <div className="m-0 mr-5 w-1/4 h-2/4">
                 <img alt="avatar" className=" w-4/4 rounded-full" src={avatar} />
             </div>
@@ -53,8 +53,9 @@ function Contributor({ name, contributions, avatar }) {
                 <h1 className=" text-lg font-medium text-left">@{name}</h1>
                 {maintainersName ? (
                     <p
-                        className="m-1 pb-1 h-5 rounded-full text-center text-xs font-medium "
+                        className="m-1 pb-1 h-5 md:w-2/4 lg:w-3/4 xl:w-2/4 rounded-full text-center text-xs font-medium "
                         style={{
+                            lineHeight: "1.5",
                             background: user.getLabelBgColor(checkUserStatus),
                             color: checkUserStatus ? "white" : "black"
                         }}>
@@ -77,7 +78,7 @@ export default function Contributors() {
     }, []);
 
     return (
-        <section className="flex-col p-8 lg:w-2/4" style={{ background: "#e5e5e5", margin: "0 auto" }}>
+        <section className=" flex flex-wrap lg:p-8 lg:w-4/4" style={{ marginTop: "30%", margin: "0 auto" }}>
             {usersDetails
                 ? usersDetails.map((user) => (
                       <Contributor
