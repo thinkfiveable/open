@@ -22,7 +22,11 @@ export default function Footer() {
                             <a>Docs</a>
                         </Link>
                     </li>
-                    <li>Contributors</li>
+                    <li>
+                        <Link href="/contributors">
+                            <a>Contributors</a>
+                        </Link>
+                    </li>
                     <li>
                         <a
                             className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl"

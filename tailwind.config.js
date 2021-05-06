@@ -14,6 +14,9 @@ module.exports = {
                 silver: "#878787",
                 bronze: "#FFB8A1",
                 contributor: "#C9BEFF"
+            },
+            flex: {
+                2: "1 1 40%"
             }
         }
     },

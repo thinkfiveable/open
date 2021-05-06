@@ -1,0 +1,14 @@
+import Layout from "../components/layout";
+import Footer from "../components/footer";
+import Contributor from '../components/contributor';
+
+export default (children) => (
+    <div>
+        <Layout
+            title="Contributors"
+            {...children}
+            children={<Contributor/>}
+        />
+    </div>
+);
+
