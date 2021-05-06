@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 const bgColors = {
     maintainer: { color: "black", status: "Maintainer" },
-    gold: { color: "#ffb800", status: "Gold Contributor" },
-    silver: { color: "#878787", status: "Silver Contributor" },
-    bronze: { color: "#ffb8a1", status: "Bronze Contributor" },
+    gold: { color: "#ffb800", status: "Gold" },
+    silver: { color: "#878787", status: "Silver" },
+    bronze: { color: "#ffb8a1", status: "Bronze" },
     contributor: { color: "#c9beff", status: "Contributor" }
 };
 
@@ -15,7 +15,6 @@ class UserStatus {
 
     getLabelBgColor(maintainer) {
         if (maintainer) return bgColors.maintainer.color;
-        if (this.contribution > 10) return bgColors.gold.color;
         if (this.contribution > 5) return bgColors.silver.color;
         if (this.contribution > 2) return bgColors.bronze.color;
         return bgColors.contributor.color;
@@ -30,7 +29,7 @@ class UserStatus {
     }
 }
 
-function Contributor({ name, contributions, avatar }) {
+function Contributor({ name, contributions, avatar, url }) {
     const [maintainers, setMaintainers] = useState([]);
     const user = new UserStatus(contributions);
 
@@ -47,13 +46,15 @@ function Contributor({ name, contributions, avatar }) {
     return (
         <div className="flex w-full m-2 lg:flex-2">
             <div className="m-0 mr-5 w-1/4 h-2/4">
-                <img alt="avatar" className=" w-4/4 rounded-full" src={avatar} />
+                <img alt="avatar" className=" sm:w-2/4 md:w-3/4 lg:w-4/4 rounded-full" src={avatar} />
             </div>
             <div className="self-center flex-1">
-                <h1 className=" text-lg font-medium text-left">@{name}</h1>
+                <a href={url} className=" text-2xl lg:text-2xl font-medium text-left md:text-3xl">
+                    @{name}
+                </a>
                 {maintainersName ? (
                     <p
-                        className="m-1 pb-1 h-5 md:w-2/4 lg:w-3/4 xl:w-2/4 rounded-full text-center text-xs font-medium "
+                        className="m-1 pb-1 h-5 md:w-1/4 lg:w-3/4 xl:w-2/4 w-2/4 sm:w-1/4 rounded-full text-center text-xs font-medium "
                         style={{
                             lineHeight: "1.5",
                             background: user.getLabelBgColor(checkUserStatus),
@@ -86,6 +87,7 @@ export default function Contributors() {
                           name={user.login}
                           contributions={user.contributions}
                           avatar={user.avatar_url}
+                          url={user.html_url}
                       />
                   ))
                 : null}
