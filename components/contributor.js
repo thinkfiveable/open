@@ -15,6 +15,7 @@ class UserStatus {
 
     getLabelBgColor(maintainer) {
         if (maintainer) return bgColors.maintainer.color;
+        if (this.contribution > 10) return bgColors.gold.color;
         if (this.contribution > 5) return bgColors.silver.color;
         if (this.contribution > 2) return bgColors.bronze.color;
         return bgColors.contributor.color;
@@ -54,7 +55,7 @@ function Contributor({ name, contributions, avatar, url }) {
                 </a>
                 {maintainersName ? (
                     <p
-                        className="m-1 pb-1 h-5 md:w-1/4 lg:w-3/4 xl:w-2/4 w-2/4 sm:w-1/4 rounded-full text-center text-xs font-medium "
+                        className="m-1 pb-1 h-5 md:w-1/4 lg:w-2/4 xl:w-2/6 w-2/4 sm:w-1/4 rounded-full text-center text-xs font-medium "
                         style={{
                             lineHeight: "1.5",
                             background: user.getLabelBgColor(checkUserStatus),
