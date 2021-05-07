@@ -19,12 +19,14 @@ export default function Footer() {
                 <ul className="flex flex-col items-center md:flex-row space-y-5 md:space-x-5 md:space-y-0">
                     <li>
                         <Link href="/docs/git">
-                            <a>Docs</a>
+                            <a className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl">Docs</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/contributors">
-                            <a>Contributors</a>
+                            <a className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl">
+                                Contributors
+                            </a>
                         </Link>
                     </li>
                     <li>
@@ -35,10 +37,18 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://hi.fiveable.me/privacy-policy/">Privacy</a>
+                        <a
+                            className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl"
+                            href="https://hi.fiveable.me/privacy-policy/">
+                            Privacy
+                        </a>
                     </li>
                     <li>
-                        <a href="https://hi.fiveable.me/terms-of-use/">Terms and Conditions</a>
+                        <a
+                            className="hover:bg-white hover:bg-opacity-5 px-4 py-2 rounded-xl"
+                            href="https://hi.fiveable.me/terms-of-use/">
+                            Terms and Conditions
+                        </a>
                     </li>
                 </ul>
             </div>
