@@ -11,7 +11,7 @@ export default function Nav() {
         <nav className="dark:text-white">
             <ul className="flex flex-wrap sm:justify-between items-start sm:items-center">
                 <ul className="mx-auto sm:mx-0 flex flex-row space-x-5">
-                    <li>
+                    <li className="self-center">
                         <SearchBar />
                     </li>
                     <li className="self-center">

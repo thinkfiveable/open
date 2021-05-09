@@ -36,7 +36,7 @@ export default function Home() {
             <main>
                 <section className="flex flex-col space-y-10 bg-blue dark:bg-blue-dark px-12 md:px-20 py-12">
                     <div className="mt-10 sm:mt-0">
-                        <div className="flex flex-row md:justify-between">
+                        <div className="flex flex-wrap-reverse flex-row justify-between">
                             <div className="flex flex-col md:flex-row md:space-x-5">
                                 <h1 className="font-rubik font-bold text-5xl sm:text-6xl">Fiveable</h1>
                                 <div className="font-mono font-medium text-2xl leading-none md:self-center">
