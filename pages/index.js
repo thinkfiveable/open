@@ -70,7 +70,7 @@ export default function Home() {
                         </Link>
                         <p className="text-xs">
                             Not sure where to start? Learn{" "}
-                            <Link href="/contributors">
+                            <Link href="/docs/git">
                                 <a className="underline font-bold">Git</a>
                             </Link>
                             .
