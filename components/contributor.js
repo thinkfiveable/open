@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 const bgColors = {
     maintainer: { color: "black", status: "Maintainer" },
-    gold: { color: "#ffb800", status: "Gold" },
-    silver: { color: "#878787", status: "Silver" },
-    bronze: { color: "#ffb8a1", status: "Bronze" },
+    gold: { color: "#ffb800", status: "Gold Contributor" },
+    silver: { color: "#878787", status: "Silver Contributor" },
+    bronze: { color: "#ffb8a1", status: "Bronze Contributor" },
     contributor: { color: "#c9beff", status: "Contributor" }
 };
 
@@ -45,19 +45,18 @@ function Contributor({ name, contributions, avatar, url }) {
     const checkUserStatus = maintainersName.find(({ login }) => login === name) !== undefined;
 
     return (
-        <div className="flex w-full m-2 lg:flex-2">
-            <div className="m-0 mr-5 w-1/4 h-2/4">
-                <img alt="avatar" className=" sm:w-2/4 md:w-3/4 lg:w-4/4 rounded-full" src={avatar} />
+        <div className="flex flex-row space-x-6">
+            <div className="w-32 h-32 rounded-full overflow-hidden">
+                <img alt="avatar" className="w-full h-full object-cover object-center" src={avatar} />
             </div>
-            <div className="self-center flex-1">
-                <a href={url} className=" text-2xl lg:text-2xl font-medium text-left md:text-3xl">
+            <div className="self-center space-y-3">
+                <a href={url} className="text-2xl md:text-3xl">
                     @{name}
                 </a>
                 {maintainersName ? (
                     <p
-                        className="m-1 pb-1 h-5 md:w-1/4 lg:w-2/4 xl:w-2/6 w-2/4 sm:w-1/4 rounded-full text-center text-xs font-medium "
+                        className="rounded-full text-center text-sm leading-6 font-bold w-48"
                         style={{
-                            lineHeight: "1.5",
                             background: user.getLabelBgColor(checkUserStatus),
                             color: checkUserStatus ? "white" : "black"
                         }}>
@@ -80,7 +79,7 @@ export default function Contributors() {
     }, []);
 
     return (
-        <section className=" flex flex-wrap lg:p-8 lg:w-4/4" style={{ marginTop: "30%", margin: "0 auto" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-14 gap-x-12">
             {usersDetails
                 ? usersDetails.map((user) => (
                       <Contributor
@@ -92,6 +91,6 @@ export default function Contributors() {
                       />
                   ))
                 : null}
-        </section>
+        </div>
     );
 }
