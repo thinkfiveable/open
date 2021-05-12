@@ -45,7 +45,7 @@ function Contributor({ name, contributions, avatar, url }) {
     const checkUserStatus = maintainersName.find(({ login }) => login === name) !== undefined;
 
     return (
-        <div className="flex flex-row space-x-6">
+        <div className="flex flex-row space-x-6 font-rubik">
             <div className="w-32 h-32 rounded-full overflow-hidden">
                 <img alt="avatar" className="w-full h-full object-cover object-center" src={avatar} />
             </div>
