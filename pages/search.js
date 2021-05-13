@@ -12,14 +12,14 @@ export default function Search() {
     const [searchVal, updateSearch] = useState(router.query.q || "");
     const results = SearchData(searchVal, data);
     return (
-        <div>
+        <div className="min-h-screen dark:text-white dark:bg-black">
             <HeadObject />
             <main>
                 <div className="flex flex-col mx-5 sm:mx-20 justify-start gap-12 py-4 sm:py-12">
                     <div className="flex flex-col-reverse items-start sm:items-center sm:flex-row sm:justify-between">
                         <input
                             type="text"
-                            className="lg:w-2/5 sm:w-1/2 p-2 lg:text-4xl md:text-3xl font-rubik border-b-4"
+                            className="bg-transparent lg:w-2/5 sm:w-1/2 p-2 lg:text-4xl md:text-3xl font-rubik border-b-4 border-black dark:border-white focus:border-opacity-50 dark:focus:border-opacity-50 focus:outline-none"
                             placeholder="Enter your query..."
                             name="search"
                             autoComplete="off"
