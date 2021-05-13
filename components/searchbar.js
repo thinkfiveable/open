@@ -9,10 +9,10 @@ export default function SearchBar() {
         router.push(`/search?q=${search}`);
     };
     return (
-        <div className="m-2 flex flex-row rounded-full bg-white sm:h-auto sm:w-3/5 md:w-2/5 sm:mr-8 md:mr-16">
+        <div className="m-2 w-auto flex flex-row rounded-full bg-transparent sm:bg-white dark:bg-black dark:bg-opacity-25 focus-within:ring-4 focus-within:ring-white focus-within:ring-opacity-25">
             <input
                 type="text"
-                className="bg-transparent hidden w-full sm:block p-2 px-4 text-xl font-rubik focus:outline-none"
+                className="bg-transparent dark:placeholder-blue focus:outline-none hidden w-full sm:block p-2 px-4 text-xl font-rubik"
                 placeholder="Search projects"
                 autoComplete="off"
                 name="search"
@@ -28,9 +28,14 @@ export default function SearchBar() {
             <button
                 type="button"
                 onClick={submit}
-                className="absolute top-26 bg-white rounded-full right-4 sm:relative p-4 sm:p-none">
-                <BsSearch className="sm:hidden" size={30} />
-                <BsSearch className="hidden sm:block" />
+                className="hidden sm:block focus:outline-none right-4 sm:relative p-4">
+                <BsSearch />
+            </button>
+            <button
+                type="button"
+                onClick={submit}
+                className="sm:hidden p-3 block rounded-full hover:bg-black dark:hover:bg-white hover:bg-opacity-10 dark:hover:bg-opacity-10 transform duration-200">
+                <BsSearch size={28} />
             </button>
         </div>
     );

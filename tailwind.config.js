@@ -8,8 +8,12 @@ module.exports = {
                 mono: "Inconsolata, monospace"
             },
             colors: {
-                blue: "#C1E8ED",
+                blue: {
+                    DEFAULT: "#C1E8ED",
+                    dark: "#01A0B6"
+                },
                 black: "#171717",
+                gray: "#393939",
                 gold: "#FFE800",
                 silver: "#878787",
                 bronze: "#FFB8A1",

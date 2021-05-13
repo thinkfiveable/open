@@ -22,10 +22,9 @@ export default function Modal({
                 onKeyDown={handleKeyDown}
                 onClick={() => setShowModal(true)}>
                 <div
-                    style={{ borderColor: award }}
-                    className="rounded-xl h-52 w-3/4 overflow-hidden border-4 mx-auto">
-                    <img src={thumbnail} alt="featured project" />
-                </div>
+                    style={{ borderColor: award, backgroundImage: `url("${thumbnail}")` }}
+                    className="rounded-xl h-52 w-3/4 overflow-hidden bg-white bg-center bg-cover border-4 mx-auto"
+                />
                 <div className="flex flex-row pt-4 justify-around">
                     <div className="flex flex-col">
                         <h2 className="font-rubik font-medium text-xl">{title}</h2>
@@ -50,9 +49,9 @@ export default function Modal({
                         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 outline-none focus:outline-none z-50 max-w-xl my-auto mx-auto">
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none overflow-y-auto max-h-96 md:max-h-full">
+                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white dark:bg-black outline-none focus:outline-none overflow-y-auto max-h-96 md:max-h-full">
                                 {/* Modal header */}
-                                <div className="flex flex-col justify-center w-full pt-12 pb-5 px-5 space-y-3 bg-blue rounded-t-lg">
+                                <div className="flex flex-col justify-center w-full pt-12 pb-5 px-5 space-y-3 bg-blue dark:bg-blue-dark rounded-t-lg">
                                     <div className="flex justify-end px-4">
                                         <a
                                             key={title}
