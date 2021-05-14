@@ -50,7 +50,7 @@ function Contributor({ name, contributions, avatar, url }) {
                 <img alt="avatar" className="w-full h-full object-cover object-center" src={avatar} />
             </div>
             <div className="self-center space-y-3">
-                <a href={url} className="text-2xl md:text-3xl">
+                <a href={url} className="text-2xl md:text-3xl dark:text-white">
                     @{name}
                 </a>
                 {maintainersName ? (
