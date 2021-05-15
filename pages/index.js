@@ -125,7 +125,7 @@ export default function Home() {
                                 type={projectType}
                                 description={projectDescription}
                                 thumbnail={
-                                    repoLogo || encodeURI(`https://og-image.vercel.app/${repoName}.png`)
+                                    repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
                                 }
                                 profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
                                 award={award ?? "silver"}
