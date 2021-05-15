@@ -50,5 +50,12 @@
         "projectType": "Library",
         "award": "silver",
         "projectDescription": "An augmentation layer for your webapp logic, allowing you to bind attributes to your HTML to add interactivity without writing any extra JavaScript. I built it with TypeScript and other tooling. Please read the Wiki if you are interested in contributing! https://github.com/aidenybai/lucia/wiki"
+    },
+    {
+        "repoName": "chrome_extension",
+        "repoOwner": "shreyfirst",
+        "projectType": "Chrome Extension",
+        "award": "silver",
+        "projectDescription": "I created Zoom Bookmarks with just plain old HTML and Javascript. It's a Chrome Extension that lets people save their online meeting meetings for easy access later. It is currently live on the Chrome Web Store: https://chrome.google.com/webstore/detail/zoom-bookmarks/haplbihlmhnffbihdfjhgnickameiphd - and will continue to update it as there are new PRs! This was one of my earliest projects, and I did a little teaching demo, which is the README too."
     }
 ]
