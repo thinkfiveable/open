@@ -8,6 +8,40 @@ import HeadObject from "../components/head";
 import Nav from "../components/nav";
 import Modal from "../components/projectdetails";
 import RepoData from "../data/PROJECTS.json";
+import { getRestfulData } from "../lib/getGithubData";
+
+export async function getStaticProps() {
+    const reposPromise = [];
+    RepoData.forEach(({ repoName, repoOwner }) => {
+        // const { repository } = getGraphqlData(repoOwner, repoName);
+        const repository = getRestfulData(repoOwner, repoName);
+        reposPromise.push(repository);
+    });
+
+    const repos = await Promise.all(reposPromise);
+    const repoMeta = RepoData.reduce((result, item) => {
+        const newRepoMeta = result;
+        newRepoMeta[item.repoName.toLowerCase()] = item;
+        return newRepoMeta;
+    }, {});
+
+    const propRepos = repos.map((repo) => {
+        return {
+            repoName: repo.name,
+            repoOwner: repo.owner.login,
+            projectType: repoMeta[repo.name.toLowerCase()].projectType,
+            projectDescription: repo.description,
+            repoLogo: repo.openGraphImage ?? repoMeta[repo.name.toLowerCase()].repoLogo ?? null,
+            award: repoMeta[repo.name.toLowerCase()].award
+        };
+    });
+
+    return {
+        props: {
+            repos: propRepos
+        }
+    };
+}
 
 export default function Home() {
     const headerOutputRange = [
@@ -83,7 +117,7 @@ export default function Home() {
 
                 <div className="mx-auto justify-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {RepoData.map(
-                        ({ repoName, repoOwner, projectType, repoLogo, projectDescription, award }) => (
+                        ({ repoName, repoOwner, projectType, projectDescription, repoLogo, award }) => (
                             <Modal
                                 key={repoName}
                                 owner={repoOwner}
@@ -91,7 +125,7 @@ export default function Home() {
                                 type={projectType}
                                 description={projectDescription}
                                 thumbnail={
-                                    repoLogo ?? encodeURI(`https://og-image.vercel.app/${repoName}.png`)
+                                    repoLogo || encodeURI(`https://og-image.vercel.app/${repoName}.png`)
                                 }
                                 profileIcon={`https://avatars.githubusercontent.com/${repoOwner}`}
                                 award={award ?? "silver"}
