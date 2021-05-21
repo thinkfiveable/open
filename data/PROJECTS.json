@@ -45,6 +45,13 @@
         "projectDescription": "This is DeltaScheme. DeltaScheme simulates the business model of a Pyramid Scheme, except on the Internet, turning the horrific business model into a friendly game. The only way to sign up for the site is with a special code given out by recruiters. New members can then send their code out to more people and invite them for tokens! Created using NodeJS, Express, Cloud Firestore, GraphQL, and more! **Still a Work In Progress, Feel Free to Contribute**"
     },
     {
+        "repoName": "rent-a-ni.co",
+        "repoOwner": "zaida04",
+        "projectType": "API",
+        "award": "silver",
+        "projectDescription": "Link shortener built with Fastify."
+    },
+    {
         "repoName": "Lucia",
         "repoOwner": "aidenybai",
         "projectType": "Library",
