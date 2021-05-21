@@ -58,5 +58,13 @@
         "projectType": "Chrome Extension",
         "award": "silver",
         "projectDescription": "I created Zoom Bookmarks with just plain old HTML and Javascript. It's a Chrome Extension that lets people save their online meeting meetings for easy access later. It is currently live on the Chrome Web Store: https://chrome.google.com/webstore/detail/zoom-bookmarks/haplbihlmhnffbihdfjhgnickameiphd - and will continue to update it as there are new PRs! This was one of my earliest projects, and I did a little teaching demo, which is the README too."
+    },
+    {
+        "repoName": "tether",
+        "repoOwner": "RayhanADev",
+        "repoLogo": "https://tether.rayhanadev.repl.co/public/tether_cover.png",
+        "projectType": "Game",
+        "award": "silver",
+        "projectDescription": "Tether is an online game with support for all devices. It uses native Canvas graphics and smart animation techniques to build an all-out aesthetically pleasing and fun game!"
     }
 ]
