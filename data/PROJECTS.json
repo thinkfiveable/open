@@ -57,5 +57,21 @@
         "projectType": "Library",
         "award": "silver",
         "projectDescription": "An augmentation layer for your webapp logic, allowing you to bind attributes to your HTML to add interactivity without writing any extra JavaScript. I built it with TypeScript and other tooling. Please read the Wiki if you are interested in contributing! https://github.com/aidenybai/lucia/wiki"
+    },
+    {
+        "repoName": "chrome_extension",
+        "repoOwner": "shreyfirst",
+        "repoLogo": "https://media.discordapp.net/attachments/706943886530183202/843226725273436200/df15b80c-aabd-46c0-8ddc-9fe20413cf28.jpeg",
+        "projectType": "Chrome Extension",
+        "award": "silver",
+        "projectDescription": "I created Zoom Bookmarks with just plain old HTML and Javascript. It's a Chrome Extension that lets people save their online meeting meetings for easy access later. It is currently live on the Chrome Web Store: https://chrome.google.com/webstore/detail/zoom-bookmarks/haplbihlmhnffbihdfjhgnickameiphd - and will continue to update it as there are new PRs! This was one of my earliest projects, and I did a little teaching demo, which is the README too."
+    },
+    {
+        "repoName": "tether",
+        "repoOwner": "RayhanADev",
+        "repoLogo": "https://tether.rayhanadev.repl.co/public/tether_cover.png",
+        "projectType": "Game",
+        "award": "silver",
+        "projectDescription": "Tether is an online game with support for all devices. It uses native Canvas graphics and smart animation techniques to build an all-out aesthetically pleasing and fun game!"
     }
 ]
