@@ -9,7 +9,9 @@ const CustomLink = (props) => {
     if (isInternalLink) {
         return (
             <Link href={href}>
-                <a {...props} className="font-semibold hover:text-gray-500 underline">{props.children}</a>
+                <a {...props} className="font-semibold hover:text-gray-500 underline">
+                    {props.children}
+                </a>
             </Link>
         );
     }
