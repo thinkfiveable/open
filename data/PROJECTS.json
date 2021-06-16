@@ -30,8 +30,8 @@
     },
     {
         "repoName": "guilded.js",
-        "repoOwner": "guildedjs",
-        "repoLogo": "https://github.com/guildedjs/guilded.js/raw/master/media/readme-header.png",
+        "repoOwner": "zaida04",
+        "repoLogo": "https://github.com/zaida04/guilded.js/raw/master/media/readme-header.png",
         "projectType": "Library",
         "award": "silver",
         "projectDescription": "Tools for interacting with the guilded.gg API. Usable in either JavaScript or TypeScript projects."
