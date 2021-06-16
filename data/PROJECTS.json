@@ -73,5 +73,12 @@
         "projectType": "Game",
         "award": "silver",
         "projectDescription": "Tether is an online game with support for all devices. It uses native Canvas graphics and smart animation techniques to build an all-out aesthetically pleasing and fun game!"
+    },
+    {
+        "repoName": "Brain-Controlled-Robotic-Joint",
+        "repoLogo": "",
+        "repoOwner": "neeltron",
+        "projectType": "Hardware",
+        "projectDescription": "This repository presents a brain-controlled robotic joint, which allows amputees to control an artificial limb using their brain."
     }
 ]
