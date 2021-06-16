@@ -79,6 +79,7 @@
         "repoLogo": "",
         "repoOwner": "neeltron",
         "projectType": "Hardware",
+        "award": "silver",
         "projectDescription": "This repository presents a brain-controlled robotic joint, which allows amputees to control an artificial limb using their brain."
     }
 ]
