@@ -82,4 +82,11 @@
         "award": "none",
         "projectDescription": "ampl-ify uses the Spotipy Python library to interact with the Spotify API and make users track recommendations based on the songs in their playlists, using a nearest neighbors algorithm."
     }
+    {
+        "repoName": "randomjokeapp",
+        "repoOwner": "nikshitak",
+        "projectType": "Web App",
+        "award": "silver",
+        "projectDescription": "This web app lets you see a joke every time you click the button, and there's hundereds of joke in the Official Joke API so that you will almost always get a new joke. This is really just meant to give a serotinin boost and to make you smile. This is the link to the web app: https://nikshitak.github.io/randomjokesapp/"
+    }
 ]
