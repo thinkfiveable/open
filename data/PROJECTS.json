@@ -83,7 +83,7 @@
         "projectDescription": "ampl-ify uses the Spotipy Python library to interact with the Spotify API and make users track recommendations based on the songs in their playlists, using a nearest neighbors algorithm."
     },
     {
-         "repoName": "randomjokeapp",
+         "repoName": "randomjokesapp",
          "repoOwner": "nikshitak",
          "projectType": "Web App",
          "award": "none",
