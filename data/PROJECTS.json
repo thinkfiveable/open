@@ -1,12 +1,5 @@
 [
     {
-        "repoName": "hangman",
-        "repoOwner": "shreeyachand",
-        "projectType": "Game",
-        "award": "silver",
-        "projectDescription": "This is a simple hangman game written in Java, with no external libraries. Players choose from two lists of words, easy or hard, and then guess the word the program gives them letter by letter (or they can try the whole word) before they run out of tries. Read the README file for more information and feel free to open an issue if you have additional questions/feedback about the program. "
-    },
-    {
         "repoName": "discord-botboi-bot",
         "repoOwner": "alt-ab",
         "projectType": "Discord Bot",
@@ -80,5 +73,13 @@
         "projectType": "Hardware",
         "award": "silver",
         "projectDescription": "This repository presents a brain-controlled robotic joint, which allows amputees to control an artificial limb using their brain."
+    },
+    {
+        "repoName": "ampl-ify",
+        "repoOwner": "shreeyachand",
+        "repoLogo": "https://raw.githubusercontent.com/shreeyachand/ampl-ify/main/cover.png",
+        "projectType": "Web App",
+        "award": "none",
+        "projectDescription": "ampl-ify uses the Spotipy Python library to interact with the Spotify API and make users track recommendations based on the songs in their playlists, using a nearest neighbors algorithm."
     }
 ]
