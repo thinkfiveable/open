@@ -88,5 +88,12 @@
          "projectType": "Web App",
          "award": "none",
          "projectDescription": "This web app lets you see a joke every time you click the button, and there's hundereds of joke in the Official Joke API so that you will almost always get a new joke. This is really just meant to give a serotinin boost and to make you smile. This is the link to the web app: https://nikshitak.github.io/randomjokesapp/"
+    },
+    {
+        "repoName": "timer-bot",
+        "repoOwner": "supersonik12",
+        "projectType": "Discord Bot",
+        "award": "none",
+        "projectDescription": "A Discord bot that can set a timer. It alerts you with a message when the timer is up. It can also run Pomodoro-style study sessions."
     }
 ]
