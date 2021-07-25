@@ -95,5 +95,12 @@
         "projectType": "Discord Bot",
         "award": "none",
         "projectDescription": "A Discord bot that can set a timer. It alerts you with a message when the timer is up. It can also run Pomodoro-style study sessions."
+    },
+    {
+        "repoName": "Swiss-Knife-Translator",
+        "repoOwner": "TobiA2028",
+        "projectType": "Discord Bot",
+        "award": "none",
+        "projectDescription": "A Discord bot that allows users to translate a phrase or generate an inspirational quote in a different language. Built with the goal of making language learning a little more fun."
     }
 ]
