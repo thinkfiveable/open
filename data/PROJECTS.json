@@ -102,5 +102,12 @@
         "projectType": "Discord Bot",
         "award": "none",
         "projectDescription": "A Discord bot that allows users to translate a phrase or generate an inspirational quote in a different language. Built with the goal of making language learning a little more fun."
+    },
+    {
+        "repoName": "Hurricano",
+        "repoOwner": "HurricanoBot",
+        "projectType": "Discord Bot",
+        "award": "none",
+        "projectDescription": "An amazing open-source Discord bot using MongoDB with many features such as a customizable prefix, a reaction menu, music, role requirement giveaways and much more!"
     }
 ]
